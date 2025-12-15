@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : Perruchot
+- PRÉNOM : Thomas
+- GROUPE : B1
 - URL du site :
 - URL FIGMA :
