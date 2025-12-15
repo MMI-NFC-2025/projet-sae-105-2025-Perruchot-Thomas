@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nettie Stevens - Accueil</title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+    
+    <script src="src/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="en-tete">
+      <a class="en-tete__lien" href="/fr/index.html">
+        <img 
+            class="en-tete__logo" 
+            src="/assets/img/icones/logo.svg" 
+            alt="Logo Mathilda - Retour à l'accueil" />
+      </a>
+      
+      <div class="selecteur-langue">
+       <button class="selecteur-langue__bouton" data-lang="fr" aria-label="Version française">FR</button>
+       <button class="selecteur-langue__bouton" data-lang="en" aria-label="English version">EN</button>
+      </div>
+
+      <button
+        class="en-tete__bouton-menu bouton-menu"
+        aria-label="Ouvrir le menu de navigation"
+        aria-expanded="false"
+        aria-controls="navigation-principale">
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+      </button>
+
+      <nav class="en-tete__menu menu" id="navigation-principale" hidden>
+        <a class="menu__logo-lien" href="/fr/index.html">
+            <img 
+                class="menu__logo-img" 
+                src="/assets/img/icones/logo.svg" 
+                alt="Logo Mathilda - Retour à l'accueil" />
+        </a>
+
+        <p class="menu__titre">Ma Mathilda</p>
+        <ul class="menu__liste">
+          <li class="menu__item">
+            <a class="menu__lien" href="/">Nettie Stevens</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__lien" href="/fr/article2.html">Les femmes de science</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__lien" href="/fr/article3.html">Sa thèse</a>
+          </li>
+        </ul>
+
+        <p class="menu__titre">Lien culturel</p>
+        <ul class="menu__liste">
+          <li class="menu__item">
+            <a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or de l’ordre masculin</a>
+          </li>
+        </ul>
+
+        <ul class="menu__liste menu__liste--secondaire">
+          <li class="menu__item">
+            <a class="menu__lien" href="/fr/projets.html">Autres projets</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__lien" href="/fr/apropos.html">À propos</a>
+          </li>
+           <li class="menu__item">
+            <a class="menu__lien" href="/fr/glossaire.html">Glossaire</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__lien" href="/fr/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
