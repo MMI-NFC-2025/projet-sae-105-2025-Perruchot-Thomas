@@ -1,0 +1,25 @@
+.hero, .introduction {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero__titre, .introduction__titre {
+  font-size: var(--titre-size);
+  color: var(--color-4);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.intro__titre {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro__texte {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.intro__figure img {
+  margin: 0 auto;
+}

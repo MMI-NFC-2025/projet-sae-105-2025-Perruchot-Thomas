@@ -1,0 +1,22 @@
+:root {
+  /* --- COULEURS --- */
+  --color: #cbbaf2;       /* Mauve clair */
+  --color-4: #5a3e9b;     /* Mauve foncé */
+  --color-5: #ffffff;     /* Blanc */
+  --color-6: #000000;     /* Noir */
+  --color-7: #636363;     /* Gris foncé */
+  --color-8: #9b9794;     /* Gris moyen */
+  --bg-color: var(--color-5);
+  --text-color: var(--color-6);
+
+  /* --- TYPOGRAPHIE --- */
+  --titre-size: 36px;
+  --body-size: 16px;
+  --intertitre-size: 20px;
+  --citation-size: 18px;
+
+  /* --- POLICES --- */
+  /* Remplacez par les vrais noms si vous chargez une font Google */
+  --font-principale: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-titre: 'Georgia', serif; 
+}

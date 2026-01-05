@@ -1,0 +1,25 @@
+body {
+  font-family: var(--font-principale);
+  font-size: var(--body-size);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-titre);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--titre-size);
+  color: var(--color-4); /* Mauve foncé */
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--color-6);
+}
+
+p {
+  margin-bottom: 1rem;
+}

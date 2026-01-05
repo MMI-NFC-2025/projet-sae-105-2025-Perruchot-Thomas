@@ -1,0 +1,94 @@
+.en-tete {
+  background-color: var(--color-6); /* Noir */
+  color: var(--color-5);            /* Blanc */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.en-tete__logo {
+  height: 40px;
+  width: auto;
+  filter: invert(1); /* Logo blanc */
+}
+
+/* Sélecteur de langue */
+.header__lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.lang-link {
+  color: var(--color-5);
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.lang-link:hover, .lang-link.active {
+  opacity: 1;
+  color: var(--color); /* Mauve clair */
+}
+
+.lang-sep {
+  opacity: 0.6;
+}
+
+/* Menu Burger */
+.en-tete__bouton-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bouton-menu__barre {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-5);
+}
+
+/* Navigation déroulante */
+.en-tete__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-6);
+  padding: 2rem;
+  text-align: center;
+  display: none;
+  z-index: 1000;
+}
+
+.en-tete__menu:not([hidden]) {
+  display: block;
+}
+
+.menu__titre {
+  font-family: var(--font-titre);
+  color: var(--color);
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-7);
+  display: inline-block;
+}
+
+.menu__lien {
+  color: var(--color-5);
+  font-size: 1.1rem;
+  display: block;
+  padding: 0.5rem 0;
+}
+
+.menu__lien:hover {
+  color: var(--color);
+}
