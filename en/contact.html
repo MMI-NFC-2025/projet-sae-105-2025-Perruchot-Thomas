@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Nettie Stevens</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <script src="/src/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="en-tete">
+       <a class="en-tete__lien" href="/en/index.html">
+        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
+      </a>
+      <div class="selecteur-langue">
+       <button class="selecteur-langue__bouton" data-lang="fr">FR</button>
+       <button class="selecteur-langue__bouton" data-lang="en">EN</button>
+      </div>
+      <button class="en-tete__bouton-menu bouton-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-principale">
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+      </button>
+      <nav class="en-tete__menu menu" id="nav-principale" hidden>
+        <a class="menu__logo-lien" href="/en/index.html">
+            <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Logo" />
+        </a>
+        <p class="menu__titre">My Mathilda</p>
+        <ul class="menu__liste">
+            <li class="menu__item"><a class="menu__lien" href="/en/article1.html">Nettie Stevens</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/article2.html">Women in Science</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/article3.html">Her Thesis</a></li>
+        </ul>
+        <p class="menu__titre">Cultural Link</p>
+        <ul class="menu__liste">
+            <li class="menu__item"><a class="menu__lien" href="/en/article4.html">Movie: Thelma & Louise</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/article5.html">Book: The Golden Age</a></li>
+        </ul>
+        <ul class="menu__liste menu__liste--secondaire">
+            <li class="menu__item"><a class="menu__lien" href="/en/projets.html">Other Projects</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/apropos.html">About</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/glossaire.html">Glossary</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contenu-principal">
+        <section class="section-contact">
+            <h1 class="section-contact__titre">Keep in touch</h1>
+            <p class="section-contact__intro">
+                Did Nettie Stevens' story touch you? Do you want to know more or simply leave a message?
+            </p>
+
+            <form class="formulaire-contact" action="#" method="post">
+                <h2 class="formulaire-contact__titre">Form</h2>
+
+                <div class="champ">
+                    <label for="nom">Your name:</label>
+                    <input type="text" id="nom" name="nom" placeholder="ex: John Doe" required />
+                </div>
+
+                <div class="champ">
+                    <label for="email">Your email:</label>
+                    <input type="email" id="email" name="email" placeholder="ex: john.doe@hotmail.com" required />
+                </div>
+
+                <div class="champ">
+                    <label for="sujet">Your subject:</label>
+                    <input type="text" id="sujet" name="sujet" required />
+                </div>
+
+                <div class="champ">
+                    <label for="message">Your message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="bouton-envoyer">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pied-de-page">
+      <div class="pied-de-page__contenu">
+        <div class="pied-de-page__bloc-logo">
+          <a href="/en/index.html">
+            <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
+          </a>
+        </div>
+        <nav aria-label="Footer menu" class="pied-de-page__nav">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="/en/projets.html">Other Projects</a></li>
+            <li><a href="/en/apropos.html">About</a></li>
+            <li><a href="/en/glossaire.html">Glossary</a></li>
+            <li><a href="/en/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="pied-de-page__mentions">
+          <h3>Legal Notice</h3>
+          Project made in 2025 - <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi Montbéliard</a>
+        </div>
+        <div class="pied-de-page__contact">
+          <h3>Contact</h3>
+          <address>Perruchot Thomas<br />Group B1<br /><a href="mailto:tperruch@edu.univ-fcomte.fr">Email</a></address>
+        </div>
+        <div class="reseaux-sociaux">
+          <h3>Follow us</h3>
+          <div class="reseaux-sociaux__liste">
+            <a href="https://facebook.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/facebook.svg" alt="Facebook" /></a>
+            <a href="https://instagram.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/instagram.svg" alt="Instagram" /></a>
+            <a href="https://x.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/twitter.svg" alt="Twitter" /></a>
+            <a href="https://youtube.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/youtube.svg" alt="Youtube" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

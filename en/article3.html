@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X + Y - Nettie Stevens</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <script src="/src/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="en-tete">
+       <a class="en-tete__lien" href="/en/index.html">
+        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
+      </a>
+      <div class="selecteur-langue">
+       <button class="selecteur-langue__bouton" data-lang="fr">FR</button>
+       <button class="selecteur-langue__bouton" data-lang="en">EN</button>
+      </div>
+      <button class="en-tete__bouton-menu bouton-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-principale">
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+        <span class="bouton-menu__barre" aria-hidden="true"></span>
+      </button>
+      <nav class="en-tete__menu menu" id="nav-principale" hidden>
+        <a class="menu__logo-lien" href="/en/index.html">
+            <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Logo" />
+        </a>
+        <p class="menu__titre">My Mathilda</p>
+        <ul class="menu__liste">
+            <li class="menu__item"><a class="menu__lien" href="/en/article1.html">Nettie Stevens</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/article2.html">Women in Science</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/article3.html">Her Thesis</a></li>
+        </ul>
+        <p class="menu__titre">Cultural Link</p>
+        <ul class="menu__liste">
+            <li class="menu__item"><a class="menu__lien" href="/en/article4.html">Movie: Thelma & Louise</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/article5.html">Book: The Golden Age</a></li>
+        </ul>
+        <ul class="menu__liste menu__liste--secondaire">
+            <li class="menu__item"><a class="menu__lien" href="/en/projets.html">Other Projects</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/apropos.html">About</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/glossaire.html">Glossary</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contenu-principal">
+      <article class="article-detail">
+        <header class="article-header">
+          <h1 class="article-header__titre">X + Y: The equation that defines our sex.</h1>
+          <p class="article-header__intro">
+            In 1905, no one really knew why a baby was born a boy or a girl. 
+            Theories ranged from the mother's nutrition to temperature. Nettie Stevens simply 
+            looked into a microscope. Here is what she saw.
+          </p>
+        </header>
+
+        <figure class="article-media">
+          <img class="article-media__img" src="/assets/img/photos/chromosome.avif" alt="XY Chromosomes" />
+          <figcaption class="article-media__legende">
+            Illustration of sex chromosomes. The Y is visibly smaller than the X.
+          </figcaption>
+        </figure>
+
+        <section class="article-contenu">
+          <h2>The riddle of the mealworms</h2>
+          <p>
+            To understand heredity, Nettie Stevens chose to study the mealworm (<em>Tenebrio 
+            molitor</em>). Why? Because they are easy to raise and their cells are large enough 
+            for the microscopes of the time. She focused on the production of gametes (sex 
+            cells: sperm and eggs).
+          </p>
+
+          <h2>The crucial observation</h2>
+          <p>
+            While observing male cells, she noticed something incredible. There were two types of sperm:
+          </p>
+          <ul>
+            <li>Half contained a full set of 10 large chromosomes.</li>
+            <li>The other half contained 9 large chromosomes and 1 very small one.</li>
+          </ul>
+          <p>
+            For females, it was simple: all eggs contained 10 large chromosomes.
+          </p>
+
+          <blockquote class="citation">
+            "She was the first to understand that sex was not a coincidence, but a biological equation."
+          </blockquote>
+
+          <h2>The conclusion: the small one decides</h2>
+          <p>
+            She named the large chromosome "X" and the small one "Y". The calculation was simple:
+          </p>
+          <ul>
+            <li>If an egg (X) is fertilized by a sperm (X) = XX. You get a female.</li>
+            <li>If an egg (X) is fertilized by a sperm (Y) = XY. You get a male.</li>
+          </ul>
+
+          <h2>For more explanations:</h2>
+          <figure class="video-container">
+            <img src="/assets/img/photos/chromosome2.avif" alt="Video preview" />
+          </figure>
+          
+          <p class="conclusion">
+            She proved that sex is a hereditary trait determined by the father, via this small 
+            Y chromosome. This discovery is the foundation of all modern sexual 
+            genetics. The fact that a patriarchal system chose to ignore it does not diminish her genius.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="pied-de-page">
+      <div class="pied-de-page__contenu">
+        <div class="pied-de-page__bloc-logo">
+          <a href="/en/index.html">
+            <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
+          </a>
+        </div>
+        <nav aria-label="Footer menu" class="pied-de-page__nav">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="/en/projets.html">Other Projects</a></li>
+            <li><a href="/en/apropos.html">About</a></li>
+            <li><a href="/en/glossaire.html">Glossary</a></li>
+            <li><a href="/en/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="pied-de-page__mentions">
+          <h3>Legal Notice</h3>
+          Project made in 2025 - <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi Montbéliard</a>
+        </div>
+        <div class="pied-de-page__contact">
+          <h3>Contact</h3>
+          <address>Perruchot Thomas<br />Group B1<br /><a href="mailto:tperruch@edu.univ-fcomte.fr">Email</a></address>
+        </div>
+        <div class="reseaux-sociaux">
+          <h3>Follow us</h3>
+          <div class="reseaux-sociaux__liste">
+            <a href="https://facebook.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/facebook.svg" alt="Facebook" /></a>
+            <a href="https://instagram.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/instagram.svg" alt="Instagram" /></a>
+            <a href="https://x.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/twitter.svg" alt="Twitter" /></a>
+            <a href="https://youtube.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/youtube.svg" alt="Youtube" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

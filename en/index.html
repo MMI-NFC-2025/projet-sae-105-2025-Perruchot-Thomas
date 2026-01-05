@@ -1,74 +1,171 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nettie Stevens - Accueil</title>
-     <link rel="stylesheet" type="text/css" href="src/css/style.css" />
-     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-     <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-     <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
-    <script src="src/js/script.js" defer></script>
+    <title>Nettie Stevens - Home</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+    <script src="/src/js/script.js" defer></script>
   </head>
   <body>
     <header class="en-tete">
-      <a class="en-tete__lien" href="/">
-        <img 
-            class="en-tete__logo" 
-            src="/assets/img/icones/logo.svg" 
-            alt="Logo Mathilda - Retour à l'accueil" />
+      <a class="en-tete__lien" href="/en/index.html">
+        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo - Home" />
       </a>
-      <button
-        class="en-tete__bouton-menu"
-        aria-label="Ouvrir le menu de navigation"
-        aria-expanded="false"
-        aria-controls="navigation-principale">
+      <div class="selecteur-langue">
+       <button class="selecteur-langue__bouton" data-lang="fr" aria-label="French version">FR</button>
+       <button class="selecteur-langue__bouton" data-lang="en" aria-label="English version">EN</button>
+      </div>
+      <button class="en-tete__bouton-menu bouton-menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
-      <nav class="en-tete__menu menu" id="navigation-principale" hidden>
-        <a class="en-tete__Menu" href="/fr/index.html">
-        <img 
-            class="en-tete__logo" 
-            src="/assets/img/icones/logo.svg" 
-            alt="Logo Mathilda - Retour à l'accueil" />
-      </a>
-        <p class="menu__titre_mathilda">Ma Mathilda</p>
-        <ul class="menu__liste_mathilda">
-          <li class="menu__element__mathilda">
-            <a class="menu__lien" href="">Nettie Stevens</a>
-          </li>
-          <li class="menu__element">
-            <a class="menu__lien" href="">Les femmes de science</a>
-          </li>
-          <li class="menu__element">
-            <a class="menu__lien" href="">Sa these</a>
-          </li>
+      <nav class="en-tete__menu menu" id="nav-principale" hidden>
+        <a class="menu__logo-lien" href="/en/index.html">
+            <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
+        </a>
+        <p class="menu__titre">My Mathilda</p>
+        <ul class="menu__liste">
+          <li class="menu__item"><a class="menu__lien" href="/en/article1.html">Nettie Stevens</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/en/article2.html">Women in Science</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/en/article3.html">Her Thesis</a></li>
         </ul>
-        <ul class="menu__culturel">
-          <li class="menu__element__culturel">
-            <a class="menu__lien" href="">Film : Thelma & Louise</a>
-          </li>
-          <li class="menu__element">
-            <a class="menu__lien" href="">Livre : L’age d’or de l’ordre masculin</a>
-          </li>
+        <p class="menu__titre">Cultural Link</p>
+        <ul class="menu__liste">
+          <li class="menu__item"><a class="menu__lien" href="/en/article4.html">Movie: Thelma & Louise</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/en/article5.html">Book: The Golden Age</a></li>
         </ul>
-        <ul class="menu__autres-liens">
-          <li class="menu__element__liens">
-            <a class="menu__lien" href="">Autres projets</a>
-          </li>
-          <li class="menu__element">
-            <a class="menu__lien" href="">A propos</a>
-          </li>
-           <li class="menu__element__liens">
-            <a class="menu__lien" href="">Glossaire</a>
-          </li>
-          <li class="menu__element">
-            <a class="menu__lien" href="">Contact</a>
-          </li>
+        <ul class="menu__liste menu__liste--secondaire">
+          <li class="menu__item"><a class="menu__lien" href="/en/projets.html">Other Projects</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/en/apropos.html">About</a></li>
+           <li class="menu__item"><a class="menu__lien" href="/en/glossaire.html">Glossary</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/en/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+
+    <main class="contenu-principal">
+      <section class="introduction">
+        <h1 class="introduction__titre">Nettie Out of Focus</h1>
+      </section>
+
+      <section class="intro">
+        <h2 class="intro__titre">Oblivion is not an accident.</h2>
+        <p class="intro__texte">
+          The Matilda Effect is a systemic mechanism: it designates the appropriation or minimization of discoveries by female scientists.
+          This site explores this patriarchal bias through the story of Nettie Stevens, and how culture is repairing this erasure today.
+        </p>
+        <figure class="intro__figure">
+            <img class="intro__image" src="/assets/img/photos/mathilda.avif" alt="Matilda effect illustration">
+        </figure>
+        <div class="intro__decoration">
+            <img class="intro__decoration-img" src="/assets/img/vectoriels/noeud.svg" alt="" aria-hidden="true" />
+        </div>
+      </section>
+
+      <section class="section-articles">
+       <header class="section-articles__en-tete">
+         <h2 class="badge">My Mathilda</h2>
+       </header>
+       
+       <div class="carrousel">
+          <button class="carrousel__bouton carrousel__bouton--gauche" aria-label="Left">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <div class="carrousel__grille" id="carrouselArticles">
+            <article class="carte">
+              <h3 class="carte__titre">Nettie Stevens facing the wall of patriarchy</h3>
+              <a href="/en/article1.html" class="carte__lien">
+                <img class="carte__image" alt="Nettie Stevens" src="/assets/img/photos/stevens.avif" />
+                <div class="carte__contenu">
+                   <p class="carte__description">She discovered the Y chromosome. He got the Nobel. Dive into the story of Nettie Stevens.</p>
+                </div>
+              </a>
+            </article>
+            <article class="carte">
+              <h3 class="carte__titre">Women of Science in Literature</h3>
+              <a href="/en/article2.html" class="carte__lien">
+                <img class="carte__image" alt="Books" src="/assets/img/photos/livre.avif" />
+                <div class="carte__contenu">
+                   <p class="carte__description">When fiction repairs oblivion. How novels give life back to women scientists.</p>
+                </div>
+              </a>
+            </article>
+            <article class="carte">
+              <h3 class="carte__titre">X + Y: The equation that defines our sex.</h3>
+              <a href="/en/article3.html" class="carte__lien">
+                <img class="carte__image" alt="Chromosomes" src="/assets/img/photos/chromosome.avif" />
+                <div class="carte__contenu">
+                   <p class="carte__description">No need for a lab coat to understand. Dive into Nettie Stevens' discovery.</p>
+                </div>
+              </a>
+            </article>
+            <article class="carte">
+              <h3 class="carte__titre">Thelma & Louise: the revolt that triggers reaction.</h3>
+              <a href="/en/article4.html" class="carte__lien">
+                <img class="carte__image" alt="Thelma and Louise" src="/assets/img/photos/film.avif" />
+                <div class="carte__contenu">
+                   <p class="carte__description">This film doesn't fix the past, it arms the present. The impossible escape of two women.</p>
+                </div>
+              </a>
+            </article>
+            <article class="carte">
+              <h3 class="carte__titre">The system that erased her.</h3>
+              <a href="/en/article5.html" class="carte__lien">
+                <img class="carte__image" alt="Book The Golden Age" src="/assets/img/photos/livre-age-dor.avif" />
+                <div class="carte__contenu">
+                   <p class="carte__description">"The Golden Age of the Masculine Order": this book describes the era when Nettie Stevens lived.</p>
+                </div>
+              </a>
+            </article>
+          </div>
+          <button class="carrousel__bouton carrousel__bouton--droite" aria-label="Right">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+       </div>
+      </section>
+    </main>
+    <footer class="pied-de-page">
+      <div class="pied-de-page__contenu">
+        <div class="pied-de-page__bloc-logo">
+          <a href="/en/index.html">
+            <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
+          </a>
+        </div>
+        <nav aria-label="Footer menu" class="pied-de-page__nav">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="/en/projets.html">Other Projects</a></li>
+            <li><a href="/en/apropos.html">About</a></li>
+            <li><a href="/en/glossaire.html">Glossary</a></li>
+            <li><a href="/en/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="pied-de-page__mentions">
+          <h3>Legal Notice</h3>
+            Project made in 2025 - <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi Montbéliard</a>
+        </div>
+        <div class="pied-de-page__contact">
+          <h3>Contact</h3>
+          <address>Perruchot Thomas<br />Group B1<br /><a href="mailto:tperruch@edu.univ-fcomte.fr">Email</a></address>
+        </div>
+        <div class="reseaux-sociaux">
+          <h3>Follow us</h3>
+          <div class="reseaux-sociaux__liste">
+            <a href="https://facebook.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/facebook.svg" alt="Facebook" /></a>
+            <a href="https://instagram.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/instagram.svg" alt="Instagram" /></a>
+            <a href="https://x.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/twitter.svg" alt="Twitter" /></a>
+            <a href="https://youtube.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/youtube.svg" alt="Youtube" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button id="btn-retour-haut" class="bouton-haut" aria-label="Back to top">
+        <img src="/assets/img/icones/up-arrow.svg" alt="" class="bouton-haut__icone" aria-hidden="true">
+    </button>
+  </body>
+</html>

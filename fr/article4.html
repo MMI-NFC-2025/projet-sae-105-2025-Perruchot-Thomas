@@ -3,154 +3,121 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nettie Stevens - Accueil</title>
-    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
-    
+    <title>Thelma & Louise - Nettie Stevens</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
-    
-    <script src="src/js/script.js" defer></script>
+    <script src="/src/js/script.js" defer></script>
   </head>
   <body>
     <header class="en-tete">
       <a class="en-tete__lien" href="/fr/index.html">
-        <img 
-            class="en-tete__logo" 
-            src="/assets/img/icones/logo.svg" 
-            alt="Logo Mathilda - Retour à l'accueil" />
+        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
       </a>
-      
       <div class="selecteur-langue">
-       <button class="selecteur-langue__bouton" data-lang="fr" aria-label="Version française">FR</button>
-       <button class="selecteur-langue__bouton" data-lang="en" aria-label="English version">EN</button>
+       <button class="selecteur-langue__bouton" data-lang="fr">FR</button>
+       <button class="selecteur-langue__bouton" data-lang="en">EN</button>
       </div>
-
-      <button
-        class="en-tete__bouton-menu bouton-menu"
-        aria-label="Ouvrir le menu de navigation"
-        aria-expanded="false"
-        aria-controls="navigation-principale">
+      <button class="en-tete__bouton-menu bouton-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
-
-      <nav class="en-tete__menu menu" id="navigation-principale" hidden>
+      <nav class="en-tete__menu menu" id="nav-principale" hidden>
         <a class="menu__logo-lien" href="/fr/index.html">
-            <img 
-                class="menu__logo-img" 
-                src="/assets/img/icones/logo.svg" 
-                alt="Logo Mathilda - Retour à l'accueil" />
+            <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Logo" />
         </a>
-
         <p class="menu__titre">Ma Mathilda</p>
         <ul class="menu__liste">
-          <li class="menu__item">
-            <a class="menu__lien" href="/">Nettie Stevens</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article2.html">Les femmes de science</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article3.html">Sa thèse</a>
-          </li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article1.html">Nettie Stevens</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article2.html">Les femmes de science</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article3.html">Sa thèse</a></li>
         </ul>
-
         <p class="menu__titre">Lien culturel</p>
         <ul class="menu__liste">
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or de l’ordre masculin</a>
-          </li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or</a></li>
         </ul>
-
         <ul class="menu__liste menu__liste--secondaire">
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/projets.html">Autres projets</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/apropos.html">À propos</a>
-          </li>
-           <li class="menu__item">
-            <a class="menu__lien" href="/fr/glossaire.html">Glossaire</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/contact.html">Contact</a>
-          </li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/projets.html">Autres projets</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/apropos.html">À propos</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/glossaire.html">Glossaire</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="contenu-principal">
-    <article class="article-detail">
+      <article class="article-detail">
         <header class="article-header">
-            <h1 class="article-header__titre">Thelma & Louise : la révolte qui fait réagir.</h1>
-            <p class="article-header__intro">
-                <em>Thelma & Louise</em> (1991) ne réhabilite pas une figure oubliée, il réhabilite la colère féminine.
-                En montrant crûment la violence du patriarcat, il cesse d'être un simple film pour devenir un électrochoc politique qui force le public à réagir.
-            </p>
+          <h1 class="article-header__titre">Thelma & Louise : la révolte qui fait réagir.</h1>
+          <p class="article-header__intro">
+            Thelma & Louise (1991) ne réhabilite pas une figure oubliée, il réhabilite la colère féminine. 
+            En montrant crûment la violence du patriarcat, il cesse d'être un simple film pour devenir un 
+            électrochoc politique qui force le public à réagir.
+          </p>
         </header>
 
-        <div class="image-wrapper">
-            <img src="/assets/img/photos/imagefilm.avif" alt="Thelma et Louise" />
-        </div>
+        <figure class="article-media">
+          <img class="article-media__img" src="/assets/img/photos/film.avif" alt="Scène du film Thelma et Louise" />
+          <figcaption class="article-media__legende">
+            Susan Sarandon et Geena Davis dans le rôle de Thelma et Louise.
+          </figcaption>
+        </figure>
 
         <section class="article-contenu">
-            <h2>L'émancipation comme acte criminel</h2>
-            <p>
-                Le film met en scène deux femmes ordinaires piégées dans un quotidien patriarcal : Thelma, par un mari infantilisant,
-                et Louise, par un travail et un passé traumatiques. Leur simple "road trip", une quête d'espace et de liberté, bascule lors d'une tentative de viol.
-            </p>
-            <p>
-                Leur acte d'autodéfense est immédiatement requalifié en crime par le système. C'est là le cœur du propos :
-                dans un système patriarcal, l'émancipation féminine est perçue comme une transgression, un acte criminel qui doit être puni.
-            </p>
+          <h2>L'émancipation comme acte criminel</h2>
+          <p>
+            Le film met en scène deux femmes ordinaires piégées dans un quotidien patriarcal : Thelma, 
+            par un mari infantilisant, et Louise, par un travail et un passé traumatiques.
+          </p>
+          <p>
+            Leur simple "road trip", une quête d'espace et de liberté, bascule lors d'une tentative de viol. 
+            Leur acte d'autodéfense est immédiatement requalifié en crime par le système. C'est là le cœur du propos : 
+            dans un système patriarcal, l'émancipation féminine est perçue comme une transgression, un acte 
+            criminel qui doit être puni.
+          </p>
 
-            <h2>Le Système comme Antagoniste</h2>
-            <p>
-                Il n'y a pas un seul "méchant". L'antagoniste, c'est le système dans son ensemble : le mari, l'agresseur, le camionneur obscène,
-                le policier, et au final, l'armée de voitures de police.
-            </p>
-            <p>
-                Le parallèle avec Nettie Stevens est puissant. Son "antagoniste" n'était pas seulement Thomas Hunt Morgan.
-                C'était l'ensemble du système scientifique (universités, publications, comités Nobel) qui était structuré pour la dévaloriser et l'effacer.
-                <em>Thelma & Louise</em> donne un visage à ce système abstrait.
-            </p>
-            <blockquote class="citation">
-                "Le film ne nous donne pas une fin heureuse. Il nous donne une raison de nous battre pour une."
-            </blockquote>
+          <h2>Le Système comme Antagoniste</h2>
+          <p>
+            Il n'y a pas un seul "méchant". L'antagoniste, c'est le système dans son ensemble : le mari, 
+            l'agresseur, le camionneur obscène, le policier, et au final, l'armée de voitures de police.
+          </p>
+          <p>
+            Le parallèle avec Nettie Stevens est puissant. Son "antagoniste" n'était pas seulement 
+            Thomas Hunt Morgan. C'était l'ensemble du système scientifique qui était structuré pour la dévaloriser. 
+            Thelma & Louise donne un visage à ce système abstrait.
+          </p>
 
-            <h2>Forcer la réaction : un acte de réhabilitation</h2>
-            <p>
-                C'est ici que le film devient un outil de réhabilitation. En acculant les héroïnes au bord du Grand Canyon, il ne leur laisse que deux choix :
-                la soumission (la prison, le retour au système) ou la mort.
-            </p>
-            <p>
-                Ce choix impossible est un miroir tendu au spectateur. Il n'y a pas de "happy end" hollywoodien. Le film nous force à ressentir l'injustice fondamentale du système.
-                La colère et la frustration que l'on ressent ne sont pas de l'échec, elles sont le but pédagogique du film. Il réhabilite notre droit à être en colère face à l'oppression.
-            </p>
+          <blockquote class="citation">
+            "Le film ne nous donne pas une fin heureuse. Il nous donne une raison de nous battre pour une."
+          </blockquote>
 
-            <div class="video-container">
-                <h3>Bande annonce du film</h3>
-                <img src="" alt="Bande annonce Thelma et Louise" />
-            </div>
+          <h2>Forcer la réaction : un acte de réhabilitation</h2>
+          <p>
+            C'est ici que le film devient un outil de réhabilitation. En acculant les héroïnes au bord 
+            du Grand Canyon, il ne leur laisse que deux choix : la soumission (la prison) ou la mort.
+          </p>
+          <p>
+            Ce choix impossible est un miroir tendu au spectateur. Le film nous force à ressentir l'injustice fondamentale du système. 
+            Il réhabilite notre droit à être en colère face à l'oppression.
+          </p>
+          
+          <h2>Bande annonce du film :</h2>
+          <figure class="video-container">
+             <img src="/assets/img/photos/imagefilm.avif" alt="Vidéo bande annonce" />
+          </figure>
         </section>
-    </article>
-</main>
+      </article>
+    </main>
 
-<footer class="pied-de-page">
+    <footer class="pied-de-page">
       <div class="pied-de-page__contenu">
         <div class="pied-de-page__bloc-logo">
           <a href="/fr/index.html">
-            <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda - Retour à l'accueil" />
+            <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
           </a>
         </div>
-        <nav aria-label="Liens utiles du pied de page" class="pied-de-page__nav">
+        <nav aria-label="Liens utiles" class="pied-de-page__nav">
           <h3>Menu</h3>
           <ul>
             <li><a href="/fr/projets.html">Autres projets</a></li>
@@ -161,43 +128,22 @@
         </nav>
         <div class="pied-de-page__mentions">
           <h3>Mentions Légales</h3>
-          Projet réalisé en 2025 dans le cadre d’un exercice
-          pédagogique au département <br>
-          <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi de Montbéliard</a>
+          Projet réalisé en 2025 - <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi de Montbéliard</a>
         </div>
         <div class="pied-de-page__contact">
           <h3>Contact</h3>
-          <address>
-            Perruchot Thomas<br />
-            Groupe B1 <br />
-            <a href="mailto:tperruch@edu.univ-fcomte.fr">tperruch@edu.univ-fcomte.fr</a>
-          </address>
+          <address>Perruchot Thomas<br />Groupe B1<br /><a href="mailto:tperruch@edu.univ-fcomte.fr">Email</a></address>
         </div>
         <div class="reseaux-sociaux">
           <h3>Nous suivre</h3>
           <div class="reseaux-sociaux__liste">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Facebook">
-              <img class="reseaux-sociaux__icone" src="/assets/img/icones/facebook.svg" alt="" aria-hidden="true" />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Instagram">
-              <img class="reseaux-sociaux__icone" src="/assets/img/icones/instagram.svg" alt="" aria-hidden="true" />
-            </a>
-            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Twitter">
-              <img class="reseaux-sociaux__icone" src="/assets/img/icones/twitter.svg" alt="" aria-hidden="true" />
-            </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Youtube">
-              <img class="reseaux-sociaux__icone" src="/assets/img/icones/youtube.svg" alt="" aria-hidden="true" />
-            </a>
+            <a href="https://facebook.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/facebook.svg" alt="Facebook" /></a>
+            <a href="https://instagram.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/instagram.svg" alt="Instagram" /></a>
+            <a href="https://x.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/twitter.svg" alt="Twitter" /></a>
+            <a href="https://youtube.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/youtube.svg" alt="Youtube" /></a>
           </div>
         </div>
       </div>
     </footer>
-    <button id="btn-retour-haut" class="bouton-haut" aria-label="Retour en haut de page">
-      <img src="/assets/img/icones/up-arrow.svg" alt="" class="bouton-haut__icone" aria-hidden="true">
-    </button>
   </body>
 </html>
-
-
-
-

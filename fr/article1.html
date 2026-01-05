@@ -3,85 +3,46 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nettie Stevens - Accueil</title>
-    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
-    
+    <title>Nettie Stevens - Le mur du patriarcat</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
-    
-    <script src="src/js/script.js" defer></script>
+    <script src="/src/js/script.js" defer></script>
   </head>
   <body>
     <header class="en-tete">
-      <a class="en-tete__lien" href="/fr/index.html">
-        <img 
-            class="en-tete__logo" 
-            src="/assets/img/icones/logo.svg" 
-            alt="Logo Mathilda - Retour à l'accueil" />
+       <a class="en-tete__lien" href="/fr/index.html">
+        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
       </a>
-      
       <div class="selecteur-langue">
        <button class="selecteur-langue__bouton" data-lang="fr" aria-label="Version française">FR</button>
        <button class="selecteur-langue__bouton" data-lang="en" aria-label="English version">EN</button>
       </div>
-
-      <button
-        class="en-tete__bouton-menu bouton-menu"
-        aria-label="Ouvrir le menu de navigation"
-        aria-expanded="false"
-        aria-controls="navigation-principale">
+      <button class="en-tete__bouton-menu bouton-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
-
-      <nav class="en-tete__menu menu" id="navigation-principale" hidden>
+      <nav class="en-tete__menu menu" id="nav-principale" hidden>
         <a class="menu__logo-lien" href="/fr/index.html">
-            <img 
-                class="menu__logo-img" 
-                src="/assets/img/icones/logo.svg" 
-                alt="Logo Mathilda - Retour à l'accueil" />
+            <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Logo" />
         </a>
-
         <p class="menu__titre">Ma Mathilda</p>
         <ul class="menu__liste">
-          <li class="menu__item">
-            <a class="menu__lien" href="/">Nettie Stevens</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article2.html">Les femmes de science</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article3.html">Sa thèse</a>
-          </li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article1.html">Nettie Stevens</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article2.html">Les femmes de science</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article3.html">Sa thèse</a></li>
         </ul>
-
         <p class="menu__titre">Lien culturel</p>
         <ul class="menu__liste">
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or de l’ordre masculin</a>
-          </li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or</a></li>
         </ul>
-
         <ul class="menu__liste menu__liste--secondaire">
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/projets.html">Autres projets</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/apropos.html">À propos</a>
-          </li>
-           <li class="menu__item">
-            <a class="menu__lien" href="/fr/glossaire.html">Glossaire</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/contact.html">Contact</a>
-          </li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/projets.html">Autres projets</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/apropos.html">À propos</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/glossaire.html">Glossaire</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -97,15 +58,17 @@
             </p>
         </header>
 
-        <section class="biographie-box">
+        <figure class="biographie-box">
             <img class="biographie-box__img" src="/assets/img/photos/nettie.avif" alt="Nettie Stevens" />
-            <ul class="biographie-box__info">
-                <li><strong>Nom de naissance :</strong> Nettie Maria Stevens</li>
-                <li><strong>Naissance :</strong> 7 juillet 1861, Cavendish (Vermont) (États-Unis)</li>
-                <li><strong>Décès :</strong> 4 Mai 1912 (50 ans), Baltimore (Maryland) (États-Unis)</li>
-                <li><strong>Nationalité :</strong> États-Unis</li>
-            </ul>
-        </section>
+            <figcaption>
+                <ul class="biographie-box__info">
+                    <li><strong>Nom de naissance :</strong> Nettie Maria Stevens</li>
+                    <li><strong>Naissance :</strong> 7 juillet 1861, Cavendish (Vermont)</li>
+                    <li><strong>Décès :</strong> 4 Mai 1912 (50 ans), Baltimore</li>
+                    <li><strong>Nationalité :</strong> États-Unis</li>
+                </ul>
+            </figcaption>
+        </figure>
 
         <section class="article-contenu">
             <h2>Se battre pour le droit de chercher</h2>
@@ -116,9 +79,9 @@
                 dans le monde de la recherche. Sa détermination était un premier acte de défiance face au système.
             </p>
 
-            <div class="image-figure">
+            <figure class="image-figure">
                 <img class="image-figure__img" src="/assets/img/vectoriels/noeud.svg" alt="noeud" />
-            </div>
+            </figure>
             <h2>1905 : La découverte qui change tout</h2>
             <p>
                 En étudiant des vers de farine, elle fait une observation fondamentale : elle démontre que le sexe biologique
@@ -161,74 +124,57 @@
             <article class="carte">
               <h3 class="carte__titre">Lise Meitner (1878-1968)</h3>
               <a href="#" class="carte__lien">
-                <img class="carte__image" alt="photo de lise Meitner" src="/assets/img/photos/dame_1.avif" />
-                <div class="carte__contenu">
-                   <p class="carte__description">Elle a expliqué la fission nucléaire, mais son collègue Otto Hahn a publié seul la découverte et a reçu le prix Nobel.</p>
-                </div>
+                <img class="carte__image" alt="Lise Meitner" src="/assets/img/photos/dame_1.avif" />
+                <div class="carte__contenu"><p class="carte__description">Elle a expliqué la fission nucléaire, Otto Hahn a eu le Nobel.</p></div>
               </a>
             </article>
             <article class="carte">
               <h3 class="carte__titre">Chien-Shiung Wu (1912-1997)</h3>
               <a href="#" class="carte__lien">
-                <img class="carte__image" alt="photo de Chien-Shiung Wu" src="/assets/img/photos/dame_2.avif" />
-                <div class="carte__contenu">
-                   <p class="carte__description">Son expérience a prouvé une théorie de la physique des particules, mais seuls ses collègues théoriciens masculins ont reçu le prix Nobel.</p>
-                </div>
+                <img class="carte__image" alt="Chien-Shiung Wu" src="/assets/img/photos/dame_2.avif" />
+                <div class="carte__contenu"><p class="carte__description">Elle a prouvé une théorie physique, ses collègues ont eu le Nobel.</p></div>
               </a>
             </article>
-            <article class="carte">
+             <article class="carte">
               <h3 class="carte__titre">Rosalind Franklin (1920-1958)</h3>
               <a href="#" class="carte__lien">
-                <img class="carte__image" alt="photo de Rosalind Franklin" src="/assets/img/photos/dame_3.avif" />
-                <div class="carte__contenu">
-                   <p class="carte__description">Sa "Photo 51" a été essentielle pour découvrir la structure de l'ADN, mais Watson et Crick ont utilisé son travail sans permission et reçu le Nobel.</p>
-                </div>
+                <img class="carte__image" alt="Rosalind Franklin" src="/assets/img/photos/dame_3.avif" />
+                <div class="carte__contenu"><p class="carte__description">Sa "Photo 51" a été essentielle pour l'ADN, Watson et Crick ont eu le Nobel.</p></div>
               </a>
             </article>
             <article class="carte">
               <h3 class="carte__titre">Esther Lederberg (1922-2006)</h3>
               <a href="#" class="carte__lien">
-                <img class="carte__image" alt="photo de Esther Lederberg" src="/assets/img/photos/dame_4.avif" />
-                <div class="carte__contenu">
-                   <p class="carte__description">Elle a inventé la réplication sur plaque en génétique, une technique que son mari a utilisée pour obtenir son prix Nobel.</p>
-                </div>
+                <img class="carte__image" alt="Esther Lederberg" src="/assets/img/photos/dame_4.avif" />
+                <div class="carte__contenu"><p class="carte__description">Elle a inventé la réplication sur plaque, son mari a eu le Nobel.</p></div>
               </a>
             </article>
             <article class="carte">
               <h3 class="carte__titre">Margaret Keane (1927-2022)</h3>
               <a href="#" class="carte__lien">
-                <img class="carte__image" alt="photo de Margaret Keane" src="/assets/img/photos/dame_5.avif" />
-                <div class="carte__contenu">
-                   <p class="carte__description">Son mari s'est attribué la totalité de son œuvre (les peintures "Big Eyes") pendant des années, devenant célèbre à sa place.</p>
-                </div>
+                <img class="carte__image" alt="Margaret Keane" src="/assets/img/photos/dame_5.avif" />
+                <div class="carte__contenu"><p class="carte__description">Son mari s'est attribué ses peintures "Big Eyes".</p></div>
               </a>
             </article>
             <article class="carte">
               <h3 class="carte__titre">Jocelyn Bell Burnell (Née en 1943)</h3>
               <a href="#" class="carte__lien">
-                <img class="carte__image" alt="photo de Jocelyn Bell Burnell" src="/assets/img/photos/dame_6.avif" />
-                <div class="carte__contenu">
-                   <p class="carte__description">Elle a découvert les pulsars alors qu'elle était étudiante, mais c'est son directeur de thèse qui a reçu le prix Nobel pour cette découverte.</p>
-                </div>
+                <img class="carte__image" alt="Jocelyn Bell Burnell" src="/assets/img/photos/dame_6.avif" />
+                <div class="carte__contenu"><p class="carte__description">Elle a découvert les pulsars, son directeur de thèse a eu le Nobel.</p></div>
               </a>
-            </article>        
+            </article>
         </aside>
       </article>
     </main>
 
     <footer class="pied-de-page">
-      <div class="pied-de-page__contenu">
-        
+       <div class="pied-de-page__contenu">
         <div class="pied-de-page__bloc-logo">
           <a href="/fr/index.html">
-            <img 
-                class="pied-de-page__logo" 
-                src="/assets/img/icones/logo.svg" 
-                alt="Logo Mathilda - Retour à l'accueil" />
+            <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
           </a>
         </div>
-
-        <nav aria-label="Liens utiles du pied de page" class="pied-de-page__nav">
+        <nav aria-label="Liens utiles" class="pied-de-page__nav">
           <h3>Menu</h3>
           <ul>
             <li><a href="/fr/projets.html">Autres projets</a></li>
@@ -237,44 +183,25 @@
             <li><a href="/fr/contact.html">Contact</a></li>
           </ul>
         </nav>
-
         <div class="pied-de-page__mentions">
           <h3>Mentions Légales</h3>
-            Projet réalisé en 2025 dans le cadre d’un exercice
-            pédagogique au département <br>
-            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi de Montbéliard</a>
+          Projet réalisé en 2025 - <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi de Montbéliard</a>
         </div>
-
         <div class="pied-de-page__contact">
           <h3>Contact</h3>
-          <address>
-            Perruchot Thomas<br />
-            Groupe B1 <br />
-            <a href="mailto:tperruch@edu.univ-fcomte.fr">tperruch@edu.univ-fcomte.fr</a>
-          </address>
+          <address>Perruchot Thomas<br />Groupe B1<br /><a href="mailto:tperruch@edu.univ-fcomte.fr">Email</a></address>
         </div>
-
         <div class="reseaux-sociaux">
           <h3>Nous suivre</h3>
           <div class="reseaux-sociaux__liste">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Facebook">
-                <img class="reseaux-sociaux__icone" src="/assets/img/icones/facebook.svg" alt="" aria-hidden="true" />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Instagram">
-                <img class="reseaux-sociaux__icone" src="/assets/img/icones/instagram.svg" alt="" aria-hidden="true" />
-            </a>
-            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Twitter">
-                <img class="reseaux-sociaux__icone" src="/assets/img/icones/twitter.svg" alt="" aria-hidden="true" />
-            </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Youtube">
-                <img class="reseaux-sociaux__icone" src="/assets/img/icones/youtube.svg" alt="" aria-hidden="true" />
-            </a>
+            <a href="https://facebook.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/facebook.svg" alt="Facebook" /></a>
+            <a href="https://instagram.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/instagram.svg" alt="Instagram" /></a>
+            <a href="https://x.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/twitter.svg" alt="Twitter" /></a>
+            <a href="https://youtube.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/youtube.svg" alt="Youtube" /></a>
           </div>
         </div>
-
       </div>
     </footer>
-
     <button id="btn-retour-haut" class="bouton-haut" aria-label="Retour en haut de page">
         <img src="/assets/img/icones/up-arrow.svg" alt="" class="bouton-haut__icone" aria-hidden="true">
     </button>

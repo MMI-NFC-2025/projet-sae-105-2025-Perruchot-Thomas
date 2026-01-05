@@ -3,120 +3,76 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nettie Stevens - Accueil</title>
-    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
-    
+    <title>À Propos - Nettie Stevens</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
-    
-    <script src="src/js/script.js" defer></script>
+    <script src="/src/js/script.js" defer></script>
   </head>
   <body>
     <header class="en-tete">
       <a class="en-tete__lien" href="/fr/index.html">
-        <img 
-            class="en-tete__logo" 
-            src="/assets/img/icones/logo.svg" 
-            alt="Logo Mathilda - Retour à l'accueil" />
+        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
       </a>
-      
       <div class="selecteur-langue">
-       <button class="selecteur-langue__bouton" data-lang="fr" aria-label="Version française">FR</button>
-       <button class="selecteur-langue__bouton" data-lang="en" aria-label="English version">EN</button>
+       <button class="selecteur-langue__bouton" data-lang="fr">FR</button>
+       <button class="selecteur-langue__bouton" data-lang="en">EN</button>
       </div>
-
-      <button
-        class="en-tete__bouton-menu bouton-menu"
-        aria-label="Ouvrir le menu de navigation"
-        aria-expanded="false"
-        aria-controls="navigation-principale">
+      <button class="en-tete__bouton-menu bouton-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
-
-      <nav class="en-tete__menu menu" id="navigation-principale" hidden>
+      <nav class="en-tete__menu menu" id="nav-principale" hidden>
         <a class="menu__logo-lien" href="/fr/index.html">
-            <img 
-                class="menu__logo-img" 
-                src="/assets/img/icones/logo.svg" 
-                alt="Logo Mathilda - Retour à l'accueil" />
+            <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Logo" />
         </a>
-
         <p class="menu__titre">Ma Mathilda</p>
         <ul class="menu__liste">
-          <li class="menu__item">
-            <a class="menu__lien" href="/">Nettie Stevens</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article2.html">Les femmes de science</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article3.html">Sa thèse</a>
-          </li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article1.html">Nettie Stevens</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article2.html">Les femmes de science</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article3.html">Sa thèse</a></li>
         </ul>
-
         <p class="menu__titre">Lien culturel</p>
         <ul class="menu__liste">
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or de l’ordre masculin</a>
-          </li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or</a></li>
         </ul>
-
         <ul class="menu__liste menu__liste--secondaire">
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/projets.html">Autres projets</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/apropos.html">À propos</a>
-          </li>
-           <li class="menu__item">
-            <a class="menu__lien" href="/fr/glossaire.html">Glossaire</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/contact.html">Contact</a>
-          </li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/projets.html">Autres projets</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/apropos.html">À propos</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/glossaire.html">Glossaire</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/fr/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="contenu-principal">
-    <section class="a-propos">
-        <h1 class="a-propos__titre">À Propos de ce Projet</h1>
-        <div class="a-propos__texte">
-            <p>
-                Je suis Thomas Perruchot, étudiant au département MMI de Montbéliard.
-                Ce site a été créé pour un exercice sur le design "Mobile First".
-            </p>
-            <p>
-                J'ai choisi l'Effet Matilda car il est au croisement du design d'information et de la justice sociale.
-                L'histoire de Nettie Stevens n'est pas une anecdote ; elle est le symptôme d'un système patriarcal qui a activement effacé ses femmes.
-            </p>
-            <p>
-                Ce site est une modeste tentative d'utiliser nos outils numériques pour participer à la réparation de cet oubli.
-            </p>
-        </div>
-    </section>
-</main>
+        <section class="a-propos">
+            <h1 class="a-propos__titre">À Propos de ce Projet</h1>
+            <div class="a-propos__texte">
+                <p>
+                    Je suis Thomas Perruchot, étudiant au département MMI de Montbéliard.
+                    Ce site a été créé pour un exercice sur le design "Mobile First".
+                </p>
+                <p>
+                    J'ai choisi l'Effet Matilda car il est au croisement du design d'information et de la justice sociale.
+                    L'histoire de Nettie Stevens n'est pas une anecdote ; elle est le symptôme d'un système patriarcal qui a activement effacé ses femmes.
+                </p>
+                <p>
+                    Ce site est une modeste tentative d'utiliser nos outils numériques pour participer à la réparation de cet oubli.
+                </p>
+            </div>
+        </section>
+    </main>
 
-<footer class="pied-de-page">
+    <footer class="pied-de-page">
       <div class="pied-de-page__contenu">
-        
         <div class="pied-de-page__bloc-logo">
           <a href="/fr/index.html">
-            <img 
-                class="pied-de-page__logo" 
-                src="/assets/img/icones/logo.svg" 
-                alt="Logo Mathilda - Retour à l'accueil" />
-          </a> </div>
-
-        <nav aria-label="Liens utiles du pied de page" class="pied-de-page__nav">
+            <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
+          </a>
+        </div>
+        <nav aria-label="Liens utiles" class="pied-de-page__nav">
           <h3>Menu</h3>
           <ul>
             <li><a href="/fr/projets.html">Autres projets</a></li>
@@ -125,46 +81,24 @@
             <li><a href="/fr/contact.html">Contact</a></li>
           </ul>
         </nav>
-
         <div class="pied-de-page__mentions">
           <h3>Mentions Légales</h3>
-            Projet réalisé en 2025 dans le cadre d’un exercice
-            pédagogique au département <br>
-            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi de Montbéliard</a>
+          Projet réalisé en 2025 - <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi de Montbéliard</a>
         </div>
-
         <div class="pied-de-page__contact">
           <h3>Contact</h3>
-          <address>
-            Perruchot Thomas<br />
-            Groupe B1 <br />
-            <a href="mailto:tperruch@edu.univ-fcomte.fr">tperruch@edu.univ-fcomte.fr</a>
-          </address>
+          <address>Perruchot Thomas<br />Groupe B1<br /><a href="mailto:tperruch@edu.univ-fcomte.fr">Email</a></address>
         </div>
-
         <div class="reseaux-sociaux">
           <h3>Nous suivre</h3>
           <div class="reseaux-sociaux__liste">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Facebook">
-                <img class="reseaux-sociaux__icone" src="/assets/img/icones/facebook.svg" alt="" aria-hidden="true" />
-            </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Instagram">
-                <img class="reseaux-sociaux__icone" src="/assets/img/icones/instagram.svg" alt="" aria-hidden="true" />
-            </a>
-            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Twitter">
-                <img class="reseaux-sociaux__icone" src="/assets/img/icones/twitter.svg" alt="" aria-hidden="true" />
-            </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Suivez-nous sur Youtube">
-                <img class="reseaux-sociaux__icone" src="/assets/img/icones/youtube.svg" alt="" aria-hidden="true" />
-            </a>
+            <a href="https://facebook.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/facebook.svg" alt="Facebook" /></a>
+            <a href="https://instagram.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/instagram.svg" alt="Instagram" /></a>
+            <a href="https://x.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/twitter.svg" alt="Twitter" /></a>
+            <a href="https://youtube.com" target="_blank"><img class="reseaux-sociaux__icone" src="/assets/img/icones/youtube.svg" alt="Youtube" /></a>
           </div>
         </div>
-
       </div>
     </footer>
-
-    <button id="btn-retour-haut" class="bouton-haut" aria-label="Retour en haut de page">
-        <img src="/assets/img/icones/up-arrow.svg" alt="" class="bouton-haut__icone" aria-hidden="true">
-    </button>
   </body>
 </html>
