@@ -16,9 +16,10 @@
         <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo - Home" />
       </a>
       <div class="selecteur-langue">
-       <button class="selecteur-langue__bouton" data-lang="fr" aria-label="French version">FR</button>
-       <button class="selecteur-langue__bouton" data-lang="en" aria-label="English version">EN</button>
-      </div>
+    <a href="/fr/index.html" class="selecteur-langue__lien" aria-label="Passer en français">FR</a>
+    <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
+    <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">EN</span>
+</div>
       <button class="en-tete__bouton-menu bouton-menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
@@ -129,11 +130,12 @@
        </div>
       </section>
     </main>
+
     <footer class="pied-de-page">
       <div class="pied-de-page__contenu">
         <div class="pied-de-page__bloc-logo">
           <a href="/en/index.html">
-            <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
+            <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
           </a>
         </div>
         <nav aria-label="Footer menu" class="pied-de-page__nav">
@@ -147,7 +149,8 @@
         </nav>
         <div class="pied-de-page__mentions">
           <h3>Legal Notice</h3>
-            Project made in 2025 - <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi Montbéliard</a>
+          Project realized in 2025 as part of a pedagogical exercise at the <br>
+          <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi department of Montbéliard</a>
         </div>
         <div class="pied-de-page__contact">
           <h3>Contact</h3>
@@ -164,8 +167,5 @@
         </div>
       </div>
     </footer>
-    <button id="btn-retour-haut" class="bouton-haut" aria-label="Back to top">
-        <img src="/assets/img/icones/up-arrow.svg" alt="" class="bouton-haut__icone" aria-hidden="true">
-    </button>
   </body>
 </html>
