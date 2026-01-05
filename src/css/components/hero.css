@@ -1,40 +1,95 @@
-.hero, .introduction {
-  text-align: center;
-  margin-top: 2rem;
+/* --- HERO SECTION (Plein Écran) --- */
+.hero {
+  position: relative;
+  width: 100%;
+  /* La hauteur prend tout l'écran moins la hauteur du header (80px) */
+  height: calc(100vh - 80px);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.hero__titre, .introduction__titre {
-  font-size: 2.5rem; /* Grand titre */
-  color: var(--color-violet-fonce);
-  margin-bottom: 1rem;
+/* L'image prend toute la place du bloc */
+.hero__figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: block;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Coupe l'image proprement pour remplir l'écran */
+  display: block;
+  /* Assombrit légèrement pour garantir que le texte blanc soit lisible */
+  filter: brightness(0.85);
+}
+
+/* --- TEXTE SUPERPOSÉ (Aligné gauche) --- */
+.hero__contenu {
+  position: absolute;
+  top: 50%;           /* Centrage vertical */
+  left: 5%;           /* Marge gauche (5% de la largeur) */
+  transform: translateY(-50%); /* Ajustement fin pour le centrage */
+  z-index: 10;        /* Au-dessus de l'image */
+  width: 90%;         /* Largeur max */
+  text-align: left;   /* Alignement gauche */
+}
+
+.hero__titre {
+  font-family: var(--font-serif);
+  /* Taille responsive : Grossit avec l'écran (Min 3rem, Max 6rem) */
+  font-size: clamp(3rem, 8vw, 6rem); 
+  color: var(--color-5); /* BLANC */
+  line-height: 1.1;
   text-transform: uppercase;
+  margin: 0;
+  
+  /* Ombre portée pour détacher le texte du fond */
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* --- SECTION SUIVANTE (Intro) --- */
+.intro {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--color-3); /* Fond beige */
 }
 
 .intro__titre {
-  font-size: 1.8rem;
-  color: var(--color-noir);
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-2); /* Violet nuit */
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
-.hero__texte, .intro__texte {
+.intro__texte {
   max-width: 700px;
-  margin: 0 auto 2rem;
+  margin: 0 auto;
   font-size: 1.1rem;
+  color: var(--color-6); /* Noir */
 }
 
-.hero__figure, .intro__figure {
-  margin: 2rem 0;
+/* Décorations (image cartoon, noeud...) */
+.intro__figure {
+  margin: 3rem 0;
 }
 
-.hero__image, .intro__image {
+.intro__image {
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
 .intro__decoration {
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
 .intro__decoration-img {
   width: 60px;
+  height: auto;
 }
