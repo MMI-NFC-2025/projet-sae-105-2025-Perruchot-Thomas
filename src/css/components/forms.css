@@ -1,0 +1,38 @@
+.section-contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulaire-contact {
+  background-color: var(--color-5);
+  padding: 2rem;
+  border: 1px solid var(--color-9);
+  border-radius: 8px;
+}
+
+.formulaire-contact__titre {
+  text-align: center;
+  color: var(--color-4);
+  margin-bottom: 2rem;
+}
+
+.champ {
+  margin-bottom: 1.5rem;
+}
+
+.champ label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.champ input, .champ textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-9); /* Bordure rose */
+  background-color: var(--color-3); /* Fond beige */
+}
+
+.champ input:focus, .champ textarea:focus {
+  outline: 2px solid var(--color-4);
+}

@@ -1,71 +1,82 @@
 .en-tete {
-  background-color: var(--color-6); /* Noir */
-  color: var(--color-5);            /* Blanc */
-  padding: 1rem 2rem;
+  background-color: var(--header-bg); /* Violet Nuit */
+  height: 80px;
+  padding: 0 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 100;
 }
 
 .en-tete__logo {
   height: 40px;
   width: auto;
-  filter: invert(1); /* Logo blanc */
+  /* Pas de filtre, on garde les couleurs d'origine */
 }
 
-/* Sélecteur de langue */
-.header__lang {
+/* Groupe à droite : Langue + Burger */
+.selecteur-langue {
+  margin-left: auto;
   display: flex;
-  align-items: center;
-  gap: 8px;
+  gap: 10px;
   margin-right: 20px;
-  font-weight: 700;
-  font-size: 1rem;
 }
 
+/* Boutons Langue Carrés */
 .lang-link {
-  color: var(--color-5);
-  opacity: 0.6;
-  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-5); /* Blanc */
+  color: var(--color-4); /* Texte Violet */
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: var(--font-sans);
+  transition: transform 0.2s;
 }
 
-.lang-link:hover, .lang-link.active {
-  opacity: 1;
-  color: var(--color); /* Mauve clair */
+.lang-link:hover {
+  transform: scale(1.05);
 }
 
-.lang-sep {
-  opacity: 0.6;
+.lang-link.active {
+  background-color: var(--color); /* Mauve clair si actif */
+  color: var(--color-2);
 }
 
-/* Menu Burger */
+.lang-sep { display: none; }
+
+/* Burger */
 .en-tete__bouton-menu {
-  background: none;
-  border: none;
-  cursor: pointer;
+  width: 40px;
+  height: 40px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 }
 
 .bouton-menu__barre {
-  width: 25px;
+  width: 30px;
   height: 3px;
-  background-color: var(--color-5);
+  background-color: var(--color-5); /* Blanc */
+  border-radius: 2px;
 }
 
-/* Navigation déroulante */
+/* Menu Déroulant */
 .en-tete__menu {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--color-6);
+  background-color: var(--header-bg); /* Violet Nuit */
   padding: 2rem;
   text-align: center;
   display: none;
-  z-index: 1000;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .en-tete__menu:not([hidden]) {
@@ -73,20 +84,19 @@
 }
 
 .menu__titre {
-  font-family: var(--font-titre);
-  color: var(--color);
+  font-family: var(--font-serif);
+  color: var(--color); /* Mauve clair */
   font-size: 1.2rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--color-7);
-  display: inline-block;
+  text-transform: uppercase;
 }
 
 .menu__lien {
-  color: var(--color-5);
-  font-size: 1.1rem;
+  color: var(--color-5); /* Blanc */
   display: block;
   padding: 0.5rem 0;
+  font-size: 1.1rem;
 }
 
 .menu__lien:hover {

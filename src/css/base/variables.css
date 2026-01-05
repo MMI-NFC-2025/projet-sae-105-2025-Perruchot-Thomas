@@ -1,22 +1,24 @@
 :root {
-  /* --- COULEURS --- */
+  /* --- VOTRE PALETTE --- */
   --color: #cbbaf2;       /* Mauve clair */
-  --color-4: #5a3e9b;     /* Mauve foncé */
+  --color-2: #2e2a4f;     /* Violet Nuit (Pour Header/Footer) */
+  --color-3: #f7f3ee;     /* Beige clair (Fond Body ?) */
+  --color-4: #5a3e9b;     /* Violet Foncé (Titres, Boutons) */
   --color-5: #ffffff;     /* Blanc */
   --color-6: #000000;     /* Noir */
-  --color-7: #636363;     /* Gris foncé */
-  --color-8: #9b9794;     /* Gris moyen */
-  --bg-color: var(--color-5);
-  --text-color: var(--color-6);
+  --color-9: #e2c2d2;     /* Rose pâle */
 
+  /* --- ALIAS SÉMANTIQUES (Pour faciliter l'usage) --- */
+  --bg-body: var(--color-3);      /* Le fond général est beige clair */
+  --text-main: var(--color-6);    /* Texte noir */
+  --header-bg: var(--color-2);    /* Header/Footer Violet Nuit */
+  --header-text: var(--color-5);  /* Texte Header Blanc */
+  
   /* --- TYPOGRAPHIE --- */
-  --titre-size: 36px;
-  --body-size: 16px;
-  --intertitre-size: 20px;
-  --citation-size: 18px;
+  --font-serif: 'Georgia', 'Times New Roman', serif; /* Titres */
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Texte */
 
-  /* --- POLICES --- */
-  /* Remplacez par les vrais noms si vous chargez une font Google */
-  --font-principale: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-titre: 'Georgia', serif; 
+  /* --- TAILLES --- */
+  --h1-size: 36px;
+  --body-size: 16px;
 }

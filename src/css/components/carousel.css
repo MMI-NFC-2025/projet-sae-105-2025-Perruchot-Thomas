@@ -1,43 +1,30 @@
+/* Mobile First : Carrousel */
 .carrousel {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  position: relative;
+  gap: 10px;
 }
 
 .carrousel__grille {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   width: 100%;
-  scrollbar-width: thin; /* Firefox */
 }
 
 .carrousel__grille .carte {
-  min-width: 280px;
-  max-width: 320px;
+  min-width: 85vw;
   scroll-snap-align: center;
-  flex-shrink: 0;
 }
 
 .carrousel__bouton {
-  background: transparent;
-  border: 2px solid var(--color-6);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  flex-shrink: 0;
-  transition: 0.3s;
+  display: none;
 }
 
-.carrousel__bouton:hover {
-  background-color: var(--color-4);
-  color: var(--color-5);
-  border-color: var(--color-4);
+/* Desktop : Grille */
+@media (min-width: 768px) {
+  .carrousel { display: none; }
+  .grille-articles { display: grid; }
 }

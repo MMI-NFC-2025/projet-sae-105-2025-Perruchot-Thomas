@@ -5,9 +5,9 @@
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
+  background-color: var(--bg-body); /* Fond beige clair */
+  color: var(--text-main);
+  line-height: 1.5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,11 +19,18 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
 }

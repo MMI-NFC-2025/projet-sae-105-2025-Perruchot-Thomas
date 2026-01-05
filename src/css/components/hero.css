@@ -1,25 +1,40 @@
 .hero, .introduction {
   text-align: center;
-  padding: 2rem 1rem;
+  margin-top: 2rem;
 }
 
 .hero__titre, .introduction__titre {
-  font-size: var(--titre-size);
-  color: var(--color-4);
-  text-transform: uppercase;
+  font-size: 2.5rem; /* Grand titre */
+  color: var(--color-violet-fonce);
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .intro__titre {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: var(--color-noir);
 }
 
-.intro__texte {
-  max-width: 600px;
+.hero__texte, .intro__texte {
+  max-width: 700px;
   margin: 0 auto 2rem;
+  font-size: 1.1rem;
 }
 
-.intro__figure img {
+.hero__figure, .intro__figure {
+  margin: 2rem 0;
+}
+
+.hero__image, .intro__image {
   margin: 0 auto;
+}
+
+.intro__decoration {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.intro__decoration-img {
+  width: 60px;
 }

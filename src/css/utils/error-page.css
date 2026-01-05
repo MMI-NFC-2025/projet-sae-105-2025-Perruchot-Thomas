@@ -1,0 +1,27 @@
+.erreur-page {
+  text-align: center;
+  padding: 4rem 1rem;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.erreur-page__titre {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--color-4);
+  margin: 0;
+  line-height: 1;
+}
+
+.erreur-page__sous-titre {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.erreur-page__image-wrapper {
+  max-width: 300px;
+  margin: 2rem 0;
+}
