@@ -1,4 +1,6 @@
-/* --- MENU BURGER --- */
+/* src/css/components/menu.css */
+
+/* Bouton Burger */
 .bouton-menu {
   width: 32px;
   height: 32px;
@@ -10,36 +12,50 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
+  z-index: 200;
 }
 
 .bouton-menu__barre {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: var(--color-5);
+  background-color: var(--text-inverse);
   border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
-/* --- MENU DÉROULANT --- */
+/* Animation croix (si géré via aria-expanded="true") */
+.bouton-menu[aria-expanded="true"] .bouton-menu__barre:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.bouton-menu[aria-expanded="true"] .bouton-menu__barre:nth-child(2) {
+  opacity: 0;
+}
+.bouton-menu[aria-expanded="true"] .bouton-menu__barre:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Le Menu Déroulant */
 .en-tete__menu {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--header-bg);
+  background-color: var(--bg-header);
   padding: 1.5rem;
   text-align: center;
-  display: none;
+  display: none; /* Caché par défaut */
   border-top: 1px solid rgba(255,255,255,0.1);
+  z-index: 100;
 }
 
 .en-tete__menu:not([hidden]) {
-  display: block;
+  display: block; /* Affiché quand pas hidden */
 }
 
 .menu__titre {
   font-family: var(--font-serif);
-  color: var(--color); /* Mauve clair */
+  color: var(--color-accent);
   font-size: 1.1rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -48,13 +64,13 @@
 }
 
 .menu__lien {
-  color: var(--color-5);
+  color: var(--text-inverse);
   font-size: 1rem;
   display: block;
   padding: 0.4rem 0;
 }
 
 .menu__lien:hover {
-  color: var(--color);
+  color: var(--color-accent);
   text-decoration: underline;
 }

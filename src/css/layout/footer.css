@@ -1,9 +1,8 @@
-/* --- PIED DE PAGE --- */
 .pied-de-page {
-  background-color: var(--header-bg);
-  font-family: var(--font-sans); /* Police corps partout */
+  background-color: var(--bg-footer);
   padding: 4rem 2rem;
   margin-top: auto;
+  color: var(--text-inverse);
 }
 
 .pied-de-page__contenu {
@@ -15,47 +14,33 @@
   text-align: left;
 }
 
-/* Logo */
-.pied-de-page__bloc-logo {
-  margin-bottom: 1rem;
-}
 .pied-de-page__logo {
   height: 60px;
   width: auto;
+  margin-bottom: 1rem;
 }
 
-/* Titres de colonnes */
 .pied-de-page h3 {
-  font-family: var(--font-sans);
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.5); /* Grisâtre */
+  color: rgba(255, 255, 255, 0.5);
 }
 
-/* Textes et Liens */
-.pied-de-page__mentions,
-.pied-de-page address,
-.pied-de-page ul li,
 .pied-de-page a {
-  color: var(--color-5); /* Blanc */
-  opacity: 1;
+  color: var(--text-inverse);
 }
-
 .pied-de-page a:hover {
-  text-decoration: underline;
   opacity: 0.8;
+  text-decoration: underline;
 }
 
-/* Réseaux sociaux */
 .reseaux-sociaux__liste {
   display: flex;
-  justify-content: flex-start;
   gap: 20px;
 }
-
 .reseaux-sociaux__icone {
   width: 24px;
   height: 24px;

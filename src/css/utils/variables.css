@@ -1,23 +1,34 @@
+/* src/css/utils/variables.css */
 :root {
   /* --- PALETTE DE COULEURS --- */
-  --color: #cbbaf2;       /* Mauve clair */
-  --color-2: #2e2a4f;     /* Violet Nuit (Header/Footer) */
-  --color-3: #f7f3ee;     /* Beige clair (Fond Body/Cartes) */
-  --color-4: #5a3e9b;     /* Violet Foncé (Titres, Boutons) */
-  --color-5: #ffffff;     /* Blanc (Texte sur fond foncé) */
-  --color-6: #000000;     /* Noir (Texte standard) */
-  --color-9: #e2c2d2;     /* Rose pâle (Hero Article 1, Carrousel) */
+  --color-mauve-clair: #cbbaf2;       
+  --color-violet-nuit: #2e2a4f;       
+  --color-beige-clair: #f7f3ee;       
+  --color-violet-fonce: #5a3e9b;      
+  --color-blanc:       #ffffff;       
+  --color-noir:        #000000;       
+  --color-rose-pale:   #e2c2d2;       
 
   /* --- ALIAS SÉMANTIQUES --- */
-  --bg-body: var(--color-3);
-  --text-main: var(--color-6);
-  --header-bg: var(--color-2);
-  --header-text: var(--color-5);
+  --bg-body: var(--color-blanc);
+  --bg-header: var(--color-violet-nuit);
+  --bg-footer: var(--color-violet-nuit);
+  --bg-card: var(--color-beige-clair);
+  --bg-rose: var(--color-rose-pale);
   
+  --text-main: var(--color-noir);
+  --text-inverse: var(--color-blanc);
+  
+  /* CHANGEMENT ICI : Les titres passent en NOIR */
+  --text-title: var(--color-noir); /* Était --color-violet-fonce */
+  
+  --color-accent: var(--color-mauve-clair);
+
   /* --- TYPOGRAPHIE --- */
   --font-serif: 'Georgia', 'Times New Roman', serif; 
   --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 
-  /* --- TAILLES DE RÉFÉRENCE --- */
+  /* --- TAILLES --- */
   --body-size: 16px;
+  --header-height: 60px;
 }

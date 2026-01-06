@@ -1,11 +1,14 @@
-/* --- HERO ACCUEIL --- */
+/* src/css/components/hero.css */
+
+/* --- HERO ACCUEIL (Reste inchangé) --- */
 .hero {
   position: relative;
   width: 100%;
-  height: calc(90vh - 60px); 
+  height: calc(90vh - var(--header-height)); 
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: var(--color-noir); 
 }
 
 .hero__figure, .hero__image {
@@ -14,6 +17,7 @@
   display: block;
   object-fit: cover;
 }
+
 .hero__image {
   filter: brightness(0.85);
 }
@@ -26,72 +30,111 @@
   z-index: 10;
   width: 90%;
   text-align: left;
+  background-color: transparent; 
+  padding: 0;
 }
 
 .hero__titre {
   font-family: var(--font-serif);
   font-size: clamp(1.8rem, 4vw, 3.5rem); 
-  color: var(--color-5);
+  color: var(--text-inverse);
   line-height: 1.1;
-  text-transform: uppercase;
+  text-transform: none; 
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
 }
 
-/* --- SECTION INTRO (Accueil) --- */
+
+/* --- INTRO ACCUEIL : BANDEAU BEIGE PLEINE LARGEUR --- */
 .intro {
-  padding: 4rem 2rem;
+  padding: 0;
   text-align: left;
-  background-color: var(--color-3);
+  background-color: var(--bg-body);
+}
+
+.intro__bloc-texte {
+  width: 100%;                  
+  background-color: var(--color-beige-clair); 
+  color: var(--text-main);      
+  
+  padding: 4rem 2rem;           
+  margin-bottom: 2rem;
+}
+
+.intro__bloc-texte > * {
+  max-width: 800px;
 }
 
 .intro__titre {
-  font-size: 2rem;
-  color: var(--color-2);
+  /* MODIFICATION ICI : Taille standardisée */
+  font-size: 1.5rem;    /* Était 2rem. Maintenant identique aux H2 des articles */
+  font-weight: bold;    /* On s'assure qu'il est bien gras comme les autres */
+  color: inherit;
   margin-bottom: 1rem;
 }
 
-.intro__figure {
-  margin: 3rem 0;
-  position: relative;
-  width: fit-content;
-  display: block;
+.intro__texte {
+  margin-bottom: 0;
 }
 
+/* L'image (Le noeud et le dessin) */
+.intro__figure {
+  /* MODIF ICI : On garde le padding latéral, mais on gère l'espace bas avec la marge */
+  padding: 0 2rem; 
+  margin: 0 0 5rem 0; /* Marge en bas pour espacer du carrousel */
+  
+  position: relative;
+  width: fit-content;
+}
+
+/* CORRECTION DU NŒUD */
 .intro__decoration {
   position: absolute;
-  bottom: -80px;
+  /* MODIF : Remonté pour chevaucher juste le bas de l'image */
+  bottom: -75px; 
   left: 50%;
-  transform: translateX(-50%) rotate(-5deg);
+  /* MODIF : Suppression de la rotation pour qu'il soit droit */
+  transform: translateX(-50%); 
   z-index: 10;
   pointer-events: none;
 }
+
 .intro__decoration-img {
   width: 200px;
   filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
 }
 
-/* --- HERO ARTICLE (Pages détails) --- */
+
+/* --- HERO ARTICLES (Reste inchangé) --- */
 .hero-article {
-  background-color: var(--color-9); /* Rose */
+  background-color: var(--bg-rose); 
   width: 100%;
   padding: 4rem 2rem;
   text-align: center;
   margin-bottom: 3rem;
 }
-
 .hero-article__conteneur {
   max-width: 800px;
   margin: 0 auto;
 }
-
 .hero-article__titre {
-  font-size: 2.5rem;
-  color: var(--color-4);
-  margin-bottom: 1.5rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 4vw, 3.5rem); 
+  line-height: 1.1;
+  text-transform: none;
+  color: var(--text-title);
+  margin-bottom: 2rem;
 }
-
 .hero-article__intro {
   font-size: 1.2rem;
-  color: var(--color-2);
   font-style: italic;
+  font-family: var(--font-serif);
+  line-height: 1.6;
+  background-color: var(--color-violet-fonce); 
+  color: var(--color-blanc);                   
+  padding: 1.5rem 2.5rem;   
+  border-radius: 4px;       
+  width: fit-content;       
+  max-width: 90%;           
+  margin: 0 auto;           
+  box-shadow: 0 4px 15px rgba(46, 42, 79, 0.2); 
 }
