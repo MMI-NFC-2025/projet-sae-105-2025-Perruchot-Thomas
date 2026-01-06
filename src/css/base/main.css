@@ -47,3 +47,43 @@ ul, ol {
 .u-noscroll {
   overflow: hidden;
 }
+
+/* src/css/base/main.css */
+
+/* ... (votre code existant) ... */
+
+/* --- STYLE DES CITATIONS (Blockquotes) --- */
+/* Pour qu'elles ressemblent aux intros des héros (Cartes violettes) */
+.citation {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  
+  /* Le style "Carte Violette" */
+  background-color: var(--color-violet-fonce);
+  color: var(--color-blanc);
+  
+  padding: 2rem;
+  border-radius: 4px;
+  
+  /* Gestion de la largeur et centrage */
+  width: fit-content;
+  max-width: 90%;
+  margin: 3rem auto; /* Marge haut/bas pour séparer du texte */
+  
+  box-shadow: 0 4px 15px rgba(46, 42, 79, 0.2);
+  
+  /* Petit détail déco : guillemets */
+  position: relative;
+}
+
+.citation::before {
+  content: "“";
+  display: block;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+}
