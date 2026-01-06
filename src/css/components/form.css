@@ -1,4 +1,3 @@
-/* --- FORMULAIRES --- */
 .formulaire {
   background-color: var(--color-3);
   padding: 2rem;
@@ -18,7 +17,8 @@
   color: var(--color-4);
 }
 
-.form-input, .form-textarea {
+.form-input,
+.form-textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -35,36 +35,20 @@
   cursor: pointer;
   font-weight: bold;
 }
+
 .form-bouton:hover {
   opacity: 0.9;
 }
 
-/* --- STYLE DU FORMULAIRE CONTACT (DESIGN ROSE & ARRONDI) --- */
-
-/* 1. Le conteneur principal (Le cadre) */
-/* 1. Le conteneur principal (Le cadre) */
 .formulaire-contact {
-  /* FOND ROSE */
-  background-color: var(--bg-rose); 
-  
+  background-color: var(--bg-rose);
   padding: 3rem;
-  
-  /* COINS BEAUCOUP PLUS ARRONDIS */
-  border-radius: 50px; 
-  
+  border-radius: 50px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   max-width: 600px;
-  
-  /* MODIFICATION ICI : 
-     0 = haut
-     auto = droite (centrage)
-     8rem = BAS (C'est ici qu'on ajoute l'espace, environ 120px)
-     auto = gauche (centrage) 
-  */
   margin: 8rem auto 8rem auto;
 }
 
-/* Titre du formulaire */
 .formulaire-contact__titre {
   text-align: center;
   margin-bottom: 2rem;
@@ -72,84 +56,60 @@
   color: var(--text-main);
 }
 
-/* 2. Les blocs de chaque champ */
 .champ {
   margin-bottom: 1.5rem;
   text-align: left;
 }
 
-/* 3. Les Labels (Nom, Email...) */
 .champ label {
   display: block;
   font-family: var(--font-sans);
-  font-weight: bold; /* Un peu de gras pour la lisibilité */
+  font-weight: bold;
   margin-bottom: 0.5rem;
   color: var(--text-main);
-  
-  /* PAS DE MAJUSCULES (Normal) */
-  text-transform: none; 
-  
+  text-transform: none;
   font-size: 1rem;
 }
 
-/* 4. Les Inputs et Textarea (Les cellules) */
 .champ input,
 .champ textarea {
   width: 100%;
   padding: 1rem;
   font-family: var(--font-sans);
   font-size: 1rem;
-  
-  background-color: var(--color-blanc); /* Fond blanc */
-  
-  /* CONTOUR TRÈS LÉGÈREMENT NOIR */
-  border: 1px solid rgba(0, 0, 0, 0.15); 
-  
-  /* ARRONDIS DES CELLULES */
-  border-radius: 15px; 
-  
+  background-color: var(--color-blanc);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
   transition: border-color 0.3s ease;
 }
 
-/* Effet au clic dans la case */
 .champ input:focus,
 .champ textarea:focus {
   outline: none;
-  border-color: #000; /* Le contour devient noir net */
+  border-color: #000;
 }
 
-/* Zone de message */
 .champ textarea {
   min-height: 150px;
   resize: vertical;
 }
 
-/* 5. Le Bouton Envoyer */
 .bouton-envoyer {
-  /* ALIGNÉ À GAUCHE (par défaut en display inline-block) */
   display: inline-block;
-  
-  /* FOND BLANC */
-  background-color: var(--color-blanc); 
-  
-  /* COUTURE (BORDURE) NOIRE */
-  border: 1px solid #000; 
-  color: #000; /* Texte noir */
-  
-  /* COINS ARRONDIS */
-  border-radius: 30px; 
-  
+  background-color: var(--color-blanc);
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 30px;
   font-family: var(--font-sans);
   font-weight: bold;
   font-size: 1rem;
-  padding: 0.8rem 2.5rem; /* Largeur confortable */
+  padding: 0.8rem 2.5rem;
   cursor: pointer;
   margin-top: 1rem;
   transition: all 0.3s ease;
 }
 
-/* Effet au survol du bouton */
 .bouton-envoyer:hover {
-  background-color: #000; /* Devient noir */
-  color: #fff;            /* Texte blanc */
+  background-color: #000;
+  color: #fff;
 }

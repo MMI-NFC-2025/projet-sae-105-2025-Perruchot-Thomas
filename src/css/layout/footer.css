@@ -32,6 +32,7 @@
 .pied-de-page a {
   color: var(--text-inverse);
 }
+
 .pied-de-page a:hover {
   opacity: 0.8;
   text-decoration: underline;
@@ -41,12 +42,14 @@
   display: flex;
   gap: 20px;
 }
+
 .reseaux-sociaux__icone {
   width: 24px;
   height: 24px;
-  filter: brightness(0) invert(1); /* Blanc pur */
+  filter: brightness(0) invert(1);
   transition: transform 0.3s;
 }
+
 .reseaux-sociaux__icone:hover {
   transform: scale(1.1);
 }

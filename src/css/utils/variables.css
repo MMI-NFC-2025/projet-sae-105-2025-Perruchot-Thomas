@@ -1,6 +1,5 @@
-/* src/css/utils/variables.css */
+
 :root {
-  /* --- PALETTE DE COULEURS --- */
   --color-mauve-clair: #cbbaf2;       
   --color-violet-nuit: #2e2a4f;       
   --color-beige-clair: #f7f3ee;       
@@ -9,7 +8,7 @@
   --color-noir:        #000000;       
   --color-rose-pale:   #e2c2d2;       
 
-  /* --- ALIAS SÉMANTIQUES --- */
+
   --bg-body: var(--color-blanc);
   --bg-header: var(--color-violet-nuit);
   --bg-footer: var(--color-violet-nuit);
@@ -18,17 +17,13 @@
   
   --text-main: var(--color-noir);
   --text-inverse: var(--color-blanc);
-  
-  /* CHANGEMENT ICI : Les titres passent en NOIR */
-  --text-title: var(--color-noir); /* Était --color-violet-fonce */
-  
+  --text-title: var(--color-noir); 
   --color-accent: var(--color-mauve-clair);
 
-  /* --- TYPOGRAPHIE --- */
+
   --font-serif: 'Georgia', 'Times New Roman', serif; 
   --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 
-  /* --- TAILLES --- */
   --body-size: 16px;
   --header-height: 60px;
 }

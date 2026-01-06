@@ -24,7 +24,6 @@
   transition: all 0.3s ease;
 }
 
-/* Animation croix (si géré via aria-expanded="true") */
 .bouton-menu[aria-expanded="true"] .bouton-menu__barre:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -35,7 +34,6 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Le Menu Déroulant */
 .en-tete__menu {
   position: absolute;
   top: 100%;
@@ -44,13 +42,13 @@
   background-color: var(--bg-header);
   padding: 1.5rem;
   text-align: center;
-  display: none; /* Caché par défaut */
+  display: none;
   border-top: 1px solid rgba(255,255,255,0.1);
   z-index: 100;
 }
 
 .en-tete__menu:not([hidden]) {
-  display: block; /* Affiché quand pas hidden */
+  display: block;
 }
 
 .menu__titre {

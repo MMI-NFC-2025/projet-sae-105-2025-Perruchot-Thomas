@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32px;  
+  width: 32px;
   height: 32px;
   border-radius: 6px;
   font-weight: bold;
@@ -31,37 +31,32 @@
   color: var(--color-violet-fonce);
   pointer-events: none;
 }
-.selecteur-langue__separateur { display: none; }
 
-/* --- BOUTON RETOUR HAUT --- */
+.selecteur-langue__separateur {
+  display: none;
+}
+
 .bouton-haut {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
   width: 50px;
   height: 50px;
-  
-  background-color: var(--color-violet-fonce); /* Rose */
+  background-color: var(--color-violet-fonce);
   border: none;
-  border-radius: 50%; /* Rond */
+  border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  
   cursor: pointer;
-  z-index: 900; /* Au-dessus du contenu, mais sous le menu (1000) */
-  
-  /* Centrage de l'icône */
+  z-index: 900;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  /* Animation d'apparition */
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.3s ease;
-  pointer-events: none; /* Inactif quand invisible */
+  pointer-events: none;
 }
 
-/* Quand le JS ajoute la classe .visible */
 .bouton-haut.visible {
   opacity: 1;
   transform: translateY(0);
@@ -69,12 +64,12 @@
 }
 
 .bouton-haut:hover {
-  background-color: var(--color-violet-fonce); /* Devient violet au survol */
+  background-color: var(--color-violet-fonce);
   transform: scale(1.1);
 }
 
 .bouton-haut__icone {
   width: 20px;
   height: 20px;
-  filter: invert(1); /* Rend l'icône blanche si elle est noire de base */
+  filter: invert(1);
 }

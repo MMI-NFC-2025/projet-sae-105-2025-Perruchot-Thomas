@@ -1,9 +1,7 @@
-/* src/css/layout/section.css */
 section {
   margin-bottom: 4rem;
 }
 
-/* Conteneur standard centré */
 .conteneur-centre,
 .contenu-principal {
   width: 100%;
@@ -16,65 +14,44 @@ section {
   padding: 2rem;
 }
 
-/* src/css/layout/section.css */
-
-/* --- ESPACEMENT DU CONTENU D'ARTICLE --- */
-
-/* Donne de l'air à tout le bloc de contenu */
 .article-contenu {
-  padding: 0 1rem; /* Marge latérale de sécurité sur mobile */
-  max-width: 800px; /* Largeur de lecture confortable */
-  margin: 0 auto;   /* Centré */
+  padding: 0 1rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Espacement avant chaque titre H2 (sauf le tout premier) */
 .article-contenu h2 {
-  margin-top: 4rem;    /* Grand espace avant un nouveau titre */
-  margin-bottom: 1.5rem; /* Espace moyen après le titre */
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Cas particulier : si le H2 est tout en haut, pas de marge géante */
 .article-contenu h2:first-child {
   margin-top: 2rem;
 }
 
-/* Espacement entre les paragraphes */
 .article-contenu p {
-  margin-bottom: 1.5rem; /* Espace standard entre paragraphes */
-  line-height: 1.8;      /* Interligne confortable pour la lecture */
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
 }
 
-/* Espacement autour des images classiques (pas l'overlay) */
 .article-contenu figure {
   margin: 3rem 0;
 }
 
-/* Espacement pour les listes à puces dans le texte */
-.article-contenu ul, 
+.article-contenu ul,
 .article-contenu ol {
   margin-bottom: 2rem;
   padding-left: 2rem;
 }
 
-/* --- SECTION "AUTRES FEMMES" (Bas de page article) --- */
 .autres-femmes {
-  /* Ajoute un grand espace au-dessus du titre pour séparer de l'article */
-  margin-top: 6rem; 
-  
-  /* Optionnel : on peut centrer le titre de cette section si vous voulez */
+  margin-top: 6rem;
   text-align: center;
 }
 
-/* Petit ajustement pour que les cartes en dessous ne soient pas collées au titre */
 .autres-femmes h2 {
   margin-bottom: 3rem;
 }
-
-/* src/css/layout/section.css */
-
-/* src/css/layout/section.css */
-
-/* --- SECTION "AUTRES FEMMES" (VERTICALE CENTRÉE) --- */
 
 .autres-femmes {
   width: 100%;
@@ -86,7 +63,7 @@ section {
 }
 
 .autres-femmes__conteneur {
-  max-width: 600px; 
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 2rem;
   position: relative;
@@ -98,16 +75,14 @@ section {
   margin-bottom: 4rem;
 }
 
-/* --- LA LIGNE ET LA FLÈCHE (BEIGE) --- */
 .timeline-wrapper {
   position: relative;
-  padding-bottom: 40px; 
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
-/* La Ligne Verticale (Beige Clair) */
 .timeline-wrapper::before {
   content: '';
   position: absolute;
@@ -116,56 +91,42 @@ section {
   top: 0;
   bottom: 0;
   width: 4px;
-  
-  /* MODIFICATION : Couleur Beige comme les cartes */
-  background-color: var(--bg-card); 
-  
-  z-index: 0; 
+  background-color: var(--bg-card);
+  z-index: 0;
 }
 
-/* La Pointe de la Flèche (Beige Clair) */
 .timeline-wrapper::after {
   content: '';
   position: absolute;
   bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  
-  /* MODIFICATION : Couleur Beige */
-  border-top: 25px solid var(--bg-card); 
-  
+  border-top: 25px solid var(--bg-card);
   z-index: 0;
 }
 
-/* --- LES CARTES --- */
 .autres-femmes .carte {
   background-color: var(--bg-card);
   color: var(--text-main);
   border-radius: 8px;
   padding: 1.5rem;
-  
-  width: 100%; 
-  margin-bottom: 3rem; 
-  
+  width: 100%;
+  margin-bottom: 3rem;
   position: relative;
-  z-index: 1; 
-  text-align: center; 
-  
+  z-index: 1;
+  text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* Suppression des points (J'ai retiré le bloc .carte::before) */
-
-/* --- HERO ARTICLES (Bandeau Rose) --- */
 .hero-article {
   background-color: var(--bg-rose);
   width: 100%;
   padding: 4rem 2rem;
-  text-align: left; /* Alignement gauche */
+  text-align: left;
   margin-bottom: 3rem;
 }
 
@@ -190,20 +151,12 @@ section {
   color: var(--text-main);
 }
 
-
-
-/* --- IMAGE AVEC LÉGENDE INTÉGRÉE (STYLE POLAROÏD ROSE) --- */
 .media-cadre-legende {
   display: block;
-  /* On réduit la marge du haut pour remonter l'image comme demandé */
-  margin: 2rem 0 4rem 0; 
-  
-  /* C'est le CONTENEUR qui a la bordure maintenant */
-  border: 10px solid var(--bg-rose); 
+  margin: 2rem 0 4rem 0;
+  border: 10px solid var(--bg-rose);
   border-radius: 4px;
-  
-  /* Pour que l'image et le texte ne dépassent pas */
-  overflow: hidden; 
+  overflow: hidden;
   width: 100%;
 }
 
@@ -211,52 +164,44 @@ section {
   display: block;
   width: 100%;
   height: auto;
-  margin: 0; /* Pas d'espace entre l'image et la légende */
+  margin: 0;
 }
 
 .media-cadre-legende__texte {
-  /* Style de la légende "intégrée" */
-  background-color: var(--bg-rose); /* Fond rose comme la bordure */
-  color: var(--text-main);          /* Couleur du texte */
-  
-  padding: 0.5rem 1rem 1rem 1rem;   /* Un peu d'espace */
+  background-color: var(--bg-rose);
+  color: var(--text-main);
+  padding: 0.5rem 1rem 1rem 1rem;
   text-align: center;
   font-family: var(--font-serif);
   font-size: 1rem;
   margin: 0;
 }
 
-/* --- GALERIE STYLE CARROUSEL (Cartes Beiges) --- */
-
 .galerie-film {
   display: grid;
-  /* Grille responsive : autant de colonnes que possible */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 2rem 0;
 }
 
 .carte-film {
-  /* STYLE CARTE (Comme l'accueil) */
-  background-color: var(--bg-card); /* Beige Clair */
+  background-color: var(--bg-card);
   border-radius: 12px;
-  overflow: hidden; /* L'image ne dépasse pas les coins arrondis */
+  overflow: hidden;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  
-  /* Flexbox pour centrer le contenu si besoin */
   display: flex;
   flex-direction: column;
 }
 
 .carte-film:hover {
-  transform: translateY(-5px); /* Petit effet au survol */
+  transform: translateY(-5px);
 }
 
 .carte-film__img {
   width: 100%;
-  height: 200px; /* Hauteur fixe pour l'uniformité */
-  object-fit: cover; /* L'image remplit la zone sans se déformer */
+  height: 200px;
+  object-fit: cover;
   display: block;
 }
 
@@ -268,7 +213,7 @@ section {
 .carte-film__titre {
   font-family: var(--font-serif);
   font-size: 1.1rem;
-  color: var(--text-title); /* Noir (modifié précédemment) */
+  color: var(--text-title);
   margin-bottom: 0.5rem;
   font-weight: bold;
 }
@@ -280,11 +225,10 @@ section {
   line-height: 1.4;
 }
 
-/* --- VARIANTE : CARTE FORMAT AFFICHE (POUR GALERIE FILM) --- */
 .carte--affiche {
-  min-height: auto;       /* On enlève la hauteur min de base */
+  min-height: auto;
   justify-content: center;
-  padding: 15px;          /* Padding réduit */
+  padding: 15px;
 }
 
 .carte--affiche .carte__lien {
@@ -294,16 +238,13 @@ section {
 }
 
 .carte--affiche .carte__image {
-  /* Dimensions fixes pour le format portrait/affiche */
   width: 320px;
   height: 480px;
-  
   object-fit: cover;
-  margin-bottom: 0;       /* On enlève la marge du bas car pas de texte */
+  margin-bottom: 0;
   display: block;
 }
 
-/* --- PROJECTS GRID --- */
 .projets-grille {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -312,12 +253,11 @@ section {
   margin-bottom: 4rem;
 }
 
-/* --- PROJECT BUTTON STYLE --- */
 .bouton-projet {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-card); /* Beige from your variables */
+  background-color: var(--bg-card);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 3rem 1.5rem;
   border-radius: 20px;
@@ -333,7 +273,7 @@ section {
 
 .bouton-projet:hover {
   transform: translateY(-5px);
-  background-color: var(--bg-rose); /* Pink on hover */
+  background-color: var(--bg-rose);
   border-color: #000;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }

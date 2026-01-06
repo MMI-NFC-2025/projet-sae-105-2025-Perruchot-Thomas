@@ -1,26 +1,16 @@
-/* src/css/components/badge.css */
 
 .badge {
-  /* --- Style Épuré (Sans cadre) --- */
   background-color: transparent; 
   border: none;                  
   box-shadow: none;              
   color: var(--text-main);       
-  
-  /* --- Typographie Standardisée --- */
   font-family: var(--font-serif);
-  
-  /* Taille et Casse */
   font-size: 1.5rem;          
   text-transform: none;       
-  
   font-weight: bold;
   letter-spacing: normal;     
-  
-  /* --- Espacement --- */
   padding: 0;                    
   display: inline-block;
-  
   margin-top: 3rem;
-  margin-bottom: 0.5rem; /* Était 3rem. Rapproche le titre du carrousel */
+  margin-bottom: 0.5rem;
 }

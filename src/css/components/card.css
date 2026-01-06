@@ -1,15 +1,12 @@
-/* src/css/components/card.css */
-
-/* --- CARTE UNITAIRE --- */
 .carte {
-  background-color: var(--bg-card); 
-  border-radius: 40px; 
+  background-color: var(--bg-card);
+  border-radius: 40px;
   padding: 25px;
-  min-height: 520px; 
+  min-height: 520px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
-  scroll-snap-align: center; 
+  scroll-snap-align: center;
 }
 
 .carte:hover {
@@ -18,10 +15,9 @@
 
 .carte__titre {
   font-family: var(--font-serif);
-  /* Un chouilla plus grand que le corps (1rem) */
-  font-size: 1.15rem; 
-  color: var(--text-main); 
-  font-weight: bold; 
+  font-size: 1.15rem;
+  color: var(--text-main);
+  font-weight: bold;
   text-align: center;
   margin-bottom: 1.5rem;
   line-height: 1.4;
@@ -36,12 +32,12 @@
 }
 
 .carte__image {
-  width: 230px; 
-  height: 270px; 
-  object-fit: cover; 
+  width: 230px;
+  height: 270px;
+  object-fit: cover;
   border-radius: 20px;
-  margin: 0 auto 1.5rem auto; 
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+  margin: 0 auto 1.5rem auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .carte__contenu {
@@ -55,14 +51,13 @@
   color: var(--text-main);
 }
 
-/* --- CARROUSEL --- */
 .carrousel {
   display: flex;
   align-items: center;
   position: relative;
-  background-color: var(--bg-rose); 
-  margin: 3rem 0; 
-  padding: 3rem 0; 
+  background-color: var(--bg-rose);
+  margin: 3rem 0;
+  padding: 3rem 0;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -75,12 +70,12 @@
   scroll-snap-type: x mandatory;
   width: 100%;
   padding: 0 max(1rem, calc(50vw - 150px));
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.carrousel__grille::-webkit-scrollbar { 
-  display: none; 
+.carrousel__grille::-webkit-scrollbar {
+  display: none;
 }
 
 .carrousel__grille .carte {
@@ -89,15 +84,14 @@
   flex-shrink: 0;
 }
 
-.carrousel__bouton { 
-  display: none; 
+.carrousel__bouton {
+  display: none;
 }
 
-/* --- VARIANTE : CARTE FORMAT AFFICHE (POUR GALERIE FILM) --- */
 .carte--affiche {
-  min-height: auto;       /* On enlève la hauteur min de base */
+  min-height: auto;
   justify-content: center;
-  padding: 15px;          /* Padding réduit */
+  padding: 15px;
 }
 
 .carte--affiche .carte__lien {
@@ -107,11 +101,9 @@
 }
 
 .carte--affiche .carte__image {
-  /* Dimensions fixes pour le format portrait/affiche */
   width: 320px;
   height: 480px;
-  
   object-fit: cover;
-  margin-bottom: 0;       /* On enlève la marge du bas car pas de texte */
+  margin-bottom: 0;
   display: block;
 }
