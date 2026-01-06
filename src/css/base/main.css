@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
+h2 {
+  font-size: 1.25rem; /* Un peu plus grand que le corps (1rem) */
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -54,36 +58,140 @@ ul, ol {
 
 /* --- STYLE DES CITATIONS (Blockquotes) --- */
 /* Pour qu'elles ressemblent aux intros des héros (Cartes violettes) */
+/* --- LE SEUL ÉLÉMENT VIOLET : LES CITATIONS --- */
 .citation {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 1.2rem;
-  line-height: 1.6;
+  line-height: 1.4; /* Interligne légèrement réduit pour gagner de la place */
   text-align: center;
   
-  /* Le style "Carte Violette" */
+  /* Le rectangle violet */
   background-color: var(--color-violet-fonce);
   color: var(--color-blanc);
   
-  padding: 2rem;
+  /* MODIFICATIONS ICI : */
+  padding: 1rem;       /* On réduit l'espace à l'intérieur (était 2rem) */
+  width: 100%;         /* Prend toute la largeur disponible */
+  max-width: 100%;     /* On enlève la limite de 90% */
+  
+  margin: 3rem 0;      /* Marge externe (Haut/Bas : 3rem, Gauche/Droite : 0) */
   border-radius: 4px;
-  
-  /* Gestion de la largeur et centrage */
-  width: fit-content;
-  max-width: 90%;
-  margin: 3rem auto; /* Marge haut/bas pour séparer du texte */
-  
   box-shadow: 0 4px 15px rgba(46, 42, 79, 0.2);
-  
-  /* Petit détail déco : guillemets */
   position: relative;
+  box-sizing: border-box; /* Important pour que le padding ne dépasse pas */
 }
 
+/* Les guillemets décoratifs (ajustés pour le nouveau padding) */
 .citation::before {
   content: "“";
   display: block;
-  font-size: 3rem;
+  font-size: 2.5rem; /* Un peu plus petit */
   line-height: 1;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   opacity: 0.5;
+}
+
+/* --- STYLE SPÉCIFIQUE ARTICLE 1 (Overlay Biographie) --- */
+
+/* 1. Le Conteneur Principal */
+.article-media--overlay {
+  position: relative;
+  width: fit-content;
+  
+  /* MODIFICATION ICI : On augmente la marge du bas pour éviter que le H2 ne passe dessous */
+  margin: 2rem auto 10rem auto; /* Était 6rem. 10rem laisse assez de place au rectangle. */
+  
+  z-index: 1;
+}
+
+/* 2. L'Image : Centrée et 80% de largeur */
+.article-media--overlay .article-media__img {
+  display: block;
+  
+  /* Bordure épaisse rose */
+  border: 12px solid var(--bg-rose); 
+  
+  /* Taille réduite à 80% de l'écran pour plus d'élégance sur mobile */
+  max-width: 80vw; 
+  width: 100%; 
+  height: auto;
+  
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* 3. Le Rectangle Rose (Légende) - COLLÉ À DROITE */
+.article-media--overlay .article-media__legende {
+  position: absolute;
+  
+  /* Position verticale : déborde un peu en bas de l'image */
+  bottom: -120px;
+  
+  /* GESTION DE LA LARGEUR "INFINIE" À DROITE */
+  /* Cette formule force le bord droit à toucher le bord de l'écran, 
+     même si le parent est plus petit */
+  right: calc(50% - 50vw);
+  
+  /* GESTION DU DÉBUT À GAUCHE */
+  /* On lui dit de commencer à 10% de l'intérieur de l'image 
+     pour qu'il y ait un bon chevauchement */
+  left: 15%; 
+  
+  /* Style Visuel */
+  background-color: var(--bg-rose); /* Rose total */
+  color: var(--color-noir);         /* Texte noir */
+  
+  padding: 1.5rem 1.5rem 1.5rem 2rem; /* Padding aéré */
+  box-shadow: -5px 5px 15px rgba(0,0,0,0.1); /* Ombre vers la gauche */
+  
+  z-index: 10;
+  
+
+  border-radius: 4px 0 0 4px; 
+}
+
+/* 4. Style du texte (Liste) */
+.article-media--overlay .article-media__legende ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.article-media--overlay .article-media__legende li {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.article-media--overlay .article-media__legende strong {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  display: block; /* Met le label (NOM :) au-dessus de la valeur */
+  margin-bottom: 0.1rem;
+}
+
+/* src/css/base/main.css */
+
+/* ... (votre code existant) ... */
+
+/* --- CENTRAGE DU NŒUD (Article 1) --- */
+.image-figure {
+  display: flex;             /* Utilise Flexbox pour le positionnement */
+  justify-content: center;   /* Centre l'image horizontalement */
+  align-items: center;       /* Centre verticalement (si hauteur fixe) */
+  
+  margin: 3rem 0;            /* Ajoute de l'espace au-dessus et en-dessous */
+  width: 100%;               /* Prend toute la largeur disponible */
+}
+
+/* Optionnel : Ajuster la taille du nœud s'il est trop grand */
+.image-figure__img {
+  display: block;
+  max-width: 200px;          /* Limite la largeur (ajustez cette valeur selon vos goûts) */
+  height: auto;
 }

@@ -14,10 +14,10 @@
         <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
       </a>
       <div class="selecteur-langue">
-    <a href="/fr/article1.html" class="selecteur-langue__lien" aria-label="Passer en français">FR</a>
-    <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
-    <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">EN</span>
-</div>
+        <a href="/fr/article1.html" class="selecteur-langue__lien" aria-label="Passer en français">FR</a>
+        <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
+        <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">EN</span>
+      </div>
       <button class="en-tete__bouton-menu bouton-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
@@ -47,21 +47,23 @@
       </nav>
     </header>
 
-    <main class="contenu-principal">
-      <article class="article-detail">
-        <header class="article-header">
-            <h1 class="article-header__titre">Nettie Stevens facing the wall of patriarchy</h1>
-            <p class="article-header__intro">
+    <main>
+      <header class="hero-article">
+        <div class="hero-article__conteneur">
+            <h1 class="hero-article__titre">Nettie Stevens facing the wall of patriarchy</h1>
+            <p class="hero-article__intro">
                 In 1905, she discovered that our sex is determined by chromosomes. Her colleague,
                 Thomas Hunt Morgan, received the Nobel Prize for work integrating this idea.
                 Nettie Stevens' story is not just a theft, it's the perfect example of systemic erasure.
             </p>
-        </header>
-
-        <figure class="biographie-box">
-            <img class="biographie-box__img" src="/assets/img/photos/nettie.avif" alt="Nettie Stevens" />
-            <figcaption>
-                <ul class="biographie-box__info">
+        </div>
+      </header>
+      <div class="contenu-principal">
+        <article class="article-detail">
+            <figure class="article-media article-media--overlay">
+            <img class="article-media__img" src="/assets/img/photos/nettie.avif" alt="Nettie Stevens" />
+            <figcaption class="article-media__legende">
+                <ul>
                     <li><strong>Birth Name:</strong> Nettie Maria Stevens</li>
                     <li><strong>Born:</strong> July 7, 1861, Cavendish (Vermont)</li>
                     <li><strong>Died:</strong> May 4, 1912 (50 years old), Baltimore</li>
@@ -70,79 +72,113 @@
             </figcaption>
         </figure>
 
-        <section class="article-contenu">
-            <h2>Fighting for the right to research</h2>
-            <p>
-                Nettie Stevens was not only a brilliant biologist: she was also a woman who, at the beginning of the 20th century,
-                had to fight for the right to do science. At a time when universities barely admitted women and laboratories were closed to them,
-                she managed to get a PhD and make a place for herself in the world of research. Her determination was a first act of defiance against the system.
-            </p>
+            <section class="article-contenu">
+                <h2>Fighting for the right to research</h2>
+                <p>
+                    Nettie Stevens was not only a brilliant biologist: she was also a woman who, at the beginning of the 20th century,
+                    had to fight for the right to do science. At a time when universities barely admitted women and laboratories were closed to them,
+                    she managed to get a PhD and make a place for herself in the world of research. Her determination was a first act of defiance against the system.
+                </p>
 
-            <figure class="image-figure">
-                <img class="image-figure__img" src="/assets/img/vectoriels/noeud.svg" alt="knot" />
-            </figure>
-            <h2>1905: The discovery that changes everything</h2>
-            <p>
-                By studying mealworms, she made a fundamental observation: she demonstrated that biological sex is determined by chromosomes.
-                More precisely, it is the Y chromosome, transmitted by the father, that gives birth to a male individual.
-                This result would lay the foundations of modern genetics.
-            </p>
-            <blockquote class="citation">
-                "It's not just a matter between two scientists, it's a reflection of a sexist system."
-            </blockquote>
+                <figure class="image-figure">
+                    <img class="image-figure__img" src="/assets/img/vectoriels/noeud.svg" alt="knot" />
+                </figure>
+                <h2>1905: The discovery that changes everything</h2>
+                <p>
+                    By studying mealworms, she made a fundamental observation: she demonstrated that biological sex is determined by chromosomes.
+                    More precisely, it is the Y chromosome, transmitted by the father, that gives birth to a male individual.
+                    This result would lay the foundations of modern genetics.
+                </p>
+                <blockquote class="citation">
+                    "It's not just a matter between two scientists, it's a reflection of a sexist system."
+                </blockquote>
 
-            <h2>Erasure: a mechanism, not an accident</h2>
-            <p>
-                Despite the importance of her discovery, her name quickly disappeared from memories. Thomas Hunt Morgan,
-                a much more influential researcher, took up her ideas, integrated them into his own work, and ended up receiving
-                the Nobel Prize in 1933. Nettie Stevens was never rewarded.
-            </p>
-            <p>
-                It would be easy to say that Morgan "stole" the discovery, but the reality is more complex. The problem is not
-                so much Morgan as the system around him.
-            </p>
+                <h2>Erasure: a mechanism, not an accident</h2>
+                <p>
+                    Despite the importance of her discovery, her name quickly disappeared from memories. Thomas Hunt Morgan,
+                    a much more influential researcher, took up her ideas, integrated them into his own work, and ended up receiving
+                    the Nobel Prize in 1933. Nettie Stevens was never rewarded.
+                </p>
+                <p>
+                    It would be easy to say that Morgan "stole" the discovery, but the reality is more complex. The problem is not
+                    so much Morgan as the system around him.
+                </p>
 
-            <h2>The patriarchal system at work</h2>
-            <p>
-                At the time, women in science were systematically invisibilized. They were considered, at best, as assistants.
-                Their work was little published, rarely cited, and they were excluded from positions of responsibility.
-            </p>
-            <p>
-                Nettie Stevens is therefore a striking example of what is now called <strong>the Matilda effect</strong>:
-                when the work of a woman is attributed to a man, not out of direct malice by a single individual,
-                but because the system in which they evolve is deeply biased.
-            </p>
-            <p>
-                She died at 50, without knowing that her discoveries would change science. Today, her journey reminds us
-                that in a patriarchal world, genius is not enough.
-            </p>
-        </section>
+                <h2>The patriarchal system at work</h2>
+                <p>
+                    At the time, women in science were systematically invisibilized. They were considered, at best, as assistants.
+                    Their work was little published, rarely cited, and they were excluded from positions of responsibility.
+                </p>
+                <p>
+                    Nettie Stevens is therefore a striking example of what is now called <strong>the Matilda effect</strong>:
+                    when the work of a woman is attributed to a man, not out of direct malice by a single individual,
+                    but because the system in which they evolve is deeply biased.
+                </p>
+                <p>
+                    She died at 50, without knowing that her discoveries would change science. Today, her journey reminds us
+                    that in a patriarchal world, genius is not enough.
+                </p>
+            </section>
 
-        <aside class="autres-femmes">
+           <aside class="autres-femmes">
+        <div class="autres-femmes__conteneur">
             <h2>Nettie Stevens is not an isolated case.</h2>
-            <article class="carte">
-              <h3 class="carte__titre">Lise Meitner (1878-1968)</h3>
-              <a href="#" class="carte__lien">
-                <img class="carte__image" alt="Lise Meitner" src="/assets/img/photos/dame_1.avif" />
-                <div class="carte__contenu"><p class="carte__description">She explained nuclear fission, Otto Hahn got the Nobel.</p></div>
-              </a>
-            </article>
-            <article class="carte">
-              <h3 class="carte__titre">Chien-Shiung Wu (1912-1997)</h3>
-              <a href="#" class="carte__lien">
-                <img class="carte__image" alt="Chien-Shiung Wu" src="/assets/img/photos/dame_2.avif" />
-                <div class="carte__contenu"><p class="carte__description">She proved a physics theory, her colleagues got the Nobel.</p></div>
-              </a>
-            </article>
-            <article class="carte">
-              <h3 class="carte__titre">Rosalind Franklin (1920-1958)</h3>
-              <a href="#" class="carte__lien">
-                <img class="carte__image" alt="Rosalind Franklin" src="/assets/img/photos/dame_3.avif" />
-                <div class="carte__contenu"><p class="carte__description">Her "Photo 51" was essential for DNA, Watson and Crick got the Nobel.</p></div>
-              </a>
-            </article>
-            </aside>
-      </article>
+            
+            <div class="timeline-wrapper">
+                
+                <article class="carte">
+                  <h3 class="carte__titre">Lise Meitner (1878-1968)</h3>
+                  <a href="#" class="carte__lien">
+                    <img class="carte__image" alt="Lise Meitner" src="/assets/img/photos/dame_1.avif" />
+                    <div class="carte__contenu"><p class="carte__description">She explained nuclear fission, Otto Hahn got the Nobel.</p></div>
+                  </a>
+                </article>
+
+                <article class="carte">
+                  <h3 class="carte__titre">Chien-Shiung Wu (1912-1997)</h3>
+                  <a href="#" class="carte__lien">
+                    <img class="carte__image" alt="Chien-Shiung Wu" src="/assets/img/photos/dame_2.avif" />
+                    <div class="carte__contenu"><p class="carte__description">She proved a physics theory, her colleagues got the Nobel.</p></div>
+                  </a>
+                </article>
+
+                 <article class="carte">
+                  <h3 class="carte__titre">Rosalind Franklin (1920-1958)</h3>
+                  <a href="#" class="carte__lien">
+                    <img class="carte__image" alt="Rosalind Franklin" src="/assets/img/photos/dame_3.avif" />
+                    <div class="carte__contenu"><p class="carte__description">Her "Photo 51" was essential for DNA, Watson and Crick got the Nobel.</p></div>
+                  </a>
+                </article>
+
+                <article class="carte">
+                  <h3 class="carte__titre">Esther Lederberg (1922-2006)</h3>
+                  <a href="#" class="carte__lien">
+                    <img class="carte__image" alt="Esther Lederberg" src="/assets/img/photos/dame_4.avif" />
+                    <div class="carte__contenu"><p class="carte__description">She invented replica plating, her husband got the Nobel.</p></div>
+                  </a>
+                </article>
+
+                <article class="carte">
+                  <h3 class="carte__titre">Margaret Keane (1927-2022)</h3>
+                  <a href="#" class="carte__lien">
+                    <img class="carte__image" alt="Margaret Keane" src="/assets/img/photos/dame_5.avif" />
+                    <div class="carte__contenu"><p class="carte__description">Her husband claimed credit for her "Big Eyes" paintings.</p></div>
+                  </a>
+                </article>
+
+                <article class="carte">
+                  <h3 class="carte__titre">Jocelyn Bell Burnell (Born 1943)</h3>
+                  <a href="#" class="carte__lien">
+                    <img class="carte__image" alt="Jocelyn Bell Burnell" src="/assets/img/photos/dame_6.avif" />
+                    <div class="carte__contenu"><p class="carte__description">She discovered pulsars, her thesis supervisor got the Nobel.</p></div>
+                  </a>
+                </article>
+
+            </div>
+        </div>
+      </aside>
+        </article>
+      </div>
     </main>
 
     <footer class="pied-de-page">

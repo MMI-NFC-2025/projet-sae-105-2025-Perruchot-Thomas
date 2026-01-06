@@ -15,3 +15,147 @@ section {
 .contenu-principal {
   padding: 2rem;
 }
+
+/* src/css/layout/section.css */
+
+/* --- ESPACEMENT DU CONTENU D'ARTICLE --- */
+
+/* Donne de l'air à tout le bloc de contenu */
+.article-contenu {
+  padding: 0 1rem; /* Marge latérale de sécurité sur mobile */
+  max-width: 800px; /* Largeur de lecture confortable */
+  margin: 0 auto;   /* Centré */
+}
+
+/* Espacement avant chaque titre H2 (sauf le tout premier) */
+.article-contenu h2 {
+  margin-top: 4rem;    /* Grand espace avant un nouveau titre */
+  margin-bottom: 1.5rem; /* Espace moyen après le titre */
+}
+
+/* Cas particulier : si le H2 est tout en haut, pas de marge géante */
+.article-contenu h2:first-child {
+  margin-top: 2rem;
+}
+
+/* Espacement entre les paragraphes */
+.article-contenu p {
+  margin-bottom: 1.5rem; /* Espace standard entre paragraphes */
+  line-height: 1.8;      /* Interligne confortable pour la lecture */
+}
+
+/* Espacement autour des images classiques (pas l'overlay) */
+.article-contenu figure {
+  margin: 3rem 0;
+}
+
+/* Espacement pour les listes à puces dans le texte */
+.article-contenu ul, 
+.article-contenu ol {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+/* --- SECTION "AUTRES FEMMES" (Bas de page article) --- */
+.autres-femmes {
+  /* Ajoute un grand espace au-dessus du titre pour séparer de l'article */
+  margin-top: 6rem; 
+  
+  /* Optionnel : on peut centrer le titre de cette section si vous voulez */
+  text-align: center;
+}
+
+/* Petit ajustement pour que les cartes en dessous ne soient pas collées au titre */
+.autres-femmes h2 {
+  margin-bottom: 3rem;
+}
+
+/* src/css/layout/section.css */
+
+/* src/css/layout/section.css */
+
+/* --- SECTION "AUTRES FEMMES" (VERTICALE CENTRÉE) --- */
+
+.autres-femmes {
+  width: 100%;
+  background-color: var(--color-violet-nuit);
+  color: var(--color-blanc);
+  padding: 4rem 0 2rem 0;
+  margin-top: 6rem;
+  margin-bottom: 0;
+}
+
+.autres-femmes__conteneur {
+  max-width: 600px; 
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.autres-femmes h2 {
+  color: var(--color-blanc);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* --- LA LIGNE ET LA FLÈCHE (BEIGE) --- */
+.timeline-wrapper {
+  position: relative;
+  padding-bottom: 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+/* La Ligne Verticale (Beige Clair) */
+.timeline-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  
+  /* MODIFICATION : Couleur Beige comme les cartes */
+  background-color: var(--bg-card); 
+  
+  z-index: 0; 
+}
+
+/* La Pointe de la Flèche (Beige Clair) */
+.timeline-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  
+  /* MODIFICATION : Couleur Beige */
+  border-top: 25px solid var(--bg-card); 
+  
+  z-index: 0;
+}
+
+/* --- LES CARTES --- */
+.autres-femmes .carte {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border-radius: 8px;
+  padding: 1.5rem;
+  
+  width: 100%; 
+  margin-bottom: 3rem; 
+  
+  position: relative;
+  z-index: 1; 
+  text-align: center; 
+  
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Suppression des points (J'ai retiré le bloc .carte::before) */
