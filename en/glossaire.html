@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Glossary - Nettie Stevens</title>
+    <title>Glossary - Mathilda</title>
+    
     <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/src/css/components/glossary.css" />
+    
     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
     <script src="/src/js/script.js" defer></script>
   </head>
@@ -13,19 +16,16 @@
        <a class="en-tete__lien" href="/en/index.html">
         <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
       </a>
-      
        <div class="selecteur-langue">
-        <a href="/fr/glossaire.html" class="selecteur-langue__lien" aria-label="Passer en Français">FR</a>
+        <a href="/fr/glossaire.html" class="selecteur-langue__lien" aria-label="Switch to French">FR</a>
         <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
         <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">EN</span>
       </div>
-
       <button class="en-tete__bouton-menu bouton-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
-      
       <nav class="en-tete__menu menu" id="nav-principale" hidden>
         <p class="menu__titre">My Mathilda</p>
         <ul class="menu__liste">
@@ -47,46 +47,72 @@
       </nav>
     </header>
 
-    <main class="contenu-principal">
-        <section class="glossaire">
-            <h1 class="glossaire__titre">Glossary</h1>
-            
-            <dl class="definitions">
-                <dt>Matilda Effect</dt>
-                <dd>
-                    Theorized by historian Margaret W. Rossiter, this term designates the systematic denial or minimization
-                    of female scientists' contribution to research, their work often being attributed to their male colleagues.
-                </dd>
+    <main>
+      <header class="hero-article">
+        <div class="hero-article__conteneur">
+            <h1 class="hero-article__titre">Glossary</h1>
+            <p class="hero-article__intro">
+                Key terms to understand the Matilda Effect and Nettie Stevens' story.
+            </p>
+        </div>
+      </header>
 
-                <dt>Patriarchy</dt>
-                <dd>
-                    A social system where authority and power are primarily held by men. It generates structural biases
-                    (in science, politics, family) that lead to the invisibilization and devaluation of women.
-                </dd>
+      <div class="contenu-principal">
+        
+        <div class="glossaire-grille">
 
-                <dt>Chromosome</dt>
-                <dd>
-                    A microscopic element present in our cells, carrying genetic information. Nettie Stevens discovered
-                    the role of sex chromosomes (X and Y).
-                </dd>
+            <details class="carte-glossaire">
+                <summary class="carte-glossaire__titre">Matilda Effect</summary>
+                <div class="carte-glossaire__contenu">
+                    <p class="carte-glossaire__texte">
+                        Theorized by historian Margaret W. Rossiter, this term refers to the systematic denial or minimization of the contribution of women scientists to research, with their work often attributed to their male colleagues.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Matilda_effect" target="_blank" class="btn-wiki">See on Wikipedia</a>
+                </div>
+            </details>
 
-                <dt>Systemic (or Structural)</dt>
-                <dd>
-                    Designates a problem that is not due to isolated individual actions, but is integrated into the very functioning
-                    of a system, organization, or society.
-                </dd>
-            </dl>
-        </section>
+            <details class="carte-glossaire">
+                <summary class="carte-glossaire__titre">Patriarchy</summary>
+                <div class="carte-glossaire__contenu">
+                    <p class="carte-glossaire__texte">
+                        A social system where authority and power are primarily held by men. It creates structural biases (in science, politics, the family) that lead to the invisibilization and devaluation of women.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Patriarchy" target="_blank" class="btn-wiki">See on Wikipedia</a>
+                </div>
+            </details>
+
+            <details class="carte-glossaire">
+                <summary class="carte-glossaire__titre">Chromosome</summary>
+                <div class="carte-glossaire__contenu">
+                    <p class="carte-glossaire__texte">
+                        A microscopic element present in our cells, carrying genetic information. Nettie Stevens discovered the role of the sex chromosomes (X and Y).
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Chromosome" target="_blank" class="btn-wiki">See on Wikipedia</a>
+                </div>
+            </details>
+
+            <details class="carte-glossaire">
+                <summary class="carte-glossaire__titre">Systemic (or Structural)</summary>
+                <div class="carte-glossaire__contenu">
+                    <p class="carte-glossaire__texte">
+                        Refers to a problem that is not due to isolated individual actions, but is integrated into the very functioning of a system, an organization, or the society.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Structural_discrimination" target="_blank" class="btn-wiki">See on Wikipedia</a>
+                </div>
+            </details>
+
+        </div>
+      </div>
     </main>
 
     <footer class="pied-de-page">
-      <div class="pied-de-page__contenu">
+       <div class="pied-de-page__contenu">
         <div class="pied-de-page__bloc-logo">
           <a href="/en/index.html">
             <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
           </a>
         </div>
-        <nav aria-label="Footer menu" class="pied-de-page__nav">
+        <nav aria-label="Useful links" class="pied-de-page__nav">
           <h3>Menu</h3>
           <ul>
             <li><a href="/en/projets.html">Other Projects</a></li>
@@ -96,9 +122,8 @@
           </ul>
         </nav>
         <div class="pied-de-page__mentions">
-          <h3>Legal Notice</h3>
-          Project realized in 2025 as part of a pedagogical exercise at the <br>
-          <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi department of Montbéliard</a>
+          <h3>Legal Mentions</h3>
+          Project made in 2025 - <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/">MMi Montbéliard</a>
         </div>
         <div class="pied-de-page__contact">
           <h3>Contact</h3>
@@ -115,5 +140,8 @@
         </div>
       </div>
     </footer>
+    <button id="btn-retour-haut" class="bouton-haut" aria-label="Back to top">
+        <img src="/assets/img/icones/up-arrow.svg" alt="" class="bouton-haut__icone" aria-hidden="true">
+    </button>
   </body>
 </html>

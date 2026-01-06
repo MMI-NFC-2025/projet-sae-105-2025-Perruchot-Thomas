@@ -4,100 +4,102 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nettie Stevens - Accueil</title>
-    <link rel="stylesheet" type="text/css" href="src/css/style.css" />  
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    
     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />  
-    <script src="src/js/script.js" defer></script>
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+    
+    <script src="/src/js/script.js" defer></script>
   </head>
   <body>
     <header class="en-tete">
       <a class="en-tete__lien" href="/fr/index.html">
-        <img 
-            class="en-tete__logo" 
-            src="/assets/img/icones/logo.svg" 
-            alt="Logo Mathilda - Retour à l'accueil" />
-      </a>   
-     <div class="selecteur-langue">
-    <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">FR</span>
-    <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
-    <a href="/en/projets.html" class="selecteur-langue__lien" aria-label="Switch to English">EN</a>
-</div>
-      <button
-        class="en-tete__bouton-menu bouton-menu"
-        aria-label="Ouvrir le menu de navigation"
-        aria-expanded="false"
-        aria-controls="navigation-principale">
+        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda - Retour à l'accueil" />
+      </a>
+      
+      <div class="selecteur-langue">
+        <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">FR</span>
+        <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
+        <a href="/en/projets.html" class="selecteur-langue__lien" aria-label="Switch to English">EN</a>
+      </div>
+
+      <button class="en-tete__bouton-menu bouton-menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
-      <nav class="en-tete__menu menu" id="navigation-principale" hidden>
+
+      <nav class="en-tete__menu menu" id="nav-principale" hidden>
         <a class="menu__logo-lien" href="/fr/index.html">
-            <img 
-                class="menu__logo-img" 
-                src="/assets/img/icones/logo.svg" 
-                alt="Logo Mathilda - Retour à l'accueil" />
+            <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
         </a>
         <p class="menu__titre">Ma Mathilda</p>
         <ul class="menu__liste">
-          <li class="menu__item">
-            <a class="menu__lien" href="/">Nettie Stevens</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article2.html">Les femmes de science</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article3.html">Sa thèse</a>
-          </li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/article1.html">Nettie Stevens</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/article2.html">Les femmes de science</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/article3.html">Sa thèse</a></li>
         </ul>
         <p class="menu__titre">Lien culturel</p>
         <ul class="menu__liste">
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or de l’ordre masculin</a>
-          </li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or</a></li>
         </ul>
         <ul class="menu__liste menu__liste--secondaire">
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/projets.html">Autres projets</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/apropos.html">À propos</a>
-          </li>
-           <li class="menu__item">
-            <a class="menu__lien" href="/fr/glossaire.html">Glossaire</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__lien" href="/fr/contact.html">Contact</a>
-          </li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/projets.html">Autres projets</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/apropos.html">À propos</a></li>
+           <li class="menu__item"><a class="menu__lien" href="/fr/glossaire.html">Glossaire</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="contenu-principal">
-    <section class="autres-projets">
-        <h1 class="autres-projets__titre">Autres Projets</h1>
-        <p class="autres-projets__intro">
-            Ce projet s'inscrit dans un travail collectif. Découvrez les univers créés par mes camarades de TP :
-        </p>
+    <main>
+      <header class="hero-article">
+        <div class="hero-article__conteneur">
+            <h1 class="hero-article__titre">Découvrez les autres projets</h1>
+            <p class="hero-article__intro">
+                Voici une sélection des travaux réalisés par mes camarades sur l'effet Matilda. 
+                Cliquez sur les boutons pour explorer leurs maquettes Figma.
+            </p>
+        </div>
+      </header>
 
-        <h2 class="autres-projets__sous-titre">Projets des élèves</h2>
-        <ul class="liste-projets">
-            <li><a href="#">Chronova</a></li>
-            <li><a href="#">Anning Coast</a></li>
-            <li><a href="#">Lumina</a></li>
-            <li><a href="#">Noyaux d'ombre</a></li>
-            <li><a href="#">Herlens</a></li>
-            <li><a href="#">Recode Her</a></li>
-            <li><a href="#">Echos de Matilda</a></li>
-        </ul>
-    </section>
-</main>
+      <div class="contenu-principal">
+        <section class="projets-grille">
+          
+          <a href="https://www.figma.com/proto/v5ZeE7pCeOmxwYfugePRZ4/Untitled?node-id=1-2&t=8ztjGPfbHrtfbDYF-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" class="bouton-projet">
+            <span>Voir Chronova</span>
+          </a>
+
+          <a href="https://www.figma.com/proto/a2Zd4o2PAyKFhahBQsb1XQ/Maquettes-projet-individuel-%E2%80%94-Ewan-MENIGOZ?node-id=3703-592&t=ZEzN3FHPc24W4YeK-1" target="_blank" class="bouton-projet">
+            <span>Voir Anning Coast</span>
+          </a>
+
+          <a href="https://www.figma.com/proto/BmUPOzyLCy6H2DmfsVaYaz/Maquettes-projet-individuel-%E2%80%94-pr%C3%A9nom-NOM?node-id=704-119&t=LtyHQvsDmlFJPegM-1" target="_blank" class="bouton-projet">
+            <span>Voir Lumina</span>
+          </a>
+
+          <a href="https://www.figma.com/proto/WgaDvVP7JoNdHl3mmHb0SO/projet?page-id=4%3A179&node-id=4-181&p=f&viewport=27%2C-361%2C0.55&t=IhMUoGtE6WnI6IKz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A181" target="_blank" class="bouton-projet">
+            <span>Voir Noyaux d'ombr</span>
+          </a>
+
+          <a href="https://www.figma.com/design/MTnlw6esSgihM3c6d5jfQi/MAQUETTE-PROJET-1-SALTINI-ELISA?node-id=24-670&t=mlmIvZr4Of21ECzw-1" target="_blank" class="bouton-projet">
+            <span>Voir Herlens</span>
+          </a>
+
+          <a href="https://www.figma.com/proto/Z45czj1K6tJQMzyAub2LIv/L%E2%80%99Effet-Matilda-%E2%80%93-Kay-McNulty--Maquette-mobile-?node-id=117-6&starting-point-node-id=117%3A6&t=ml3h9WufUtkwf6PI-1" target="_blank" class="bouton-projet">
+            <span>Voir Recode Her</span>
+          </a>
+
+          <a href="https://www.figma.com/proto/CyudQ8fj2wL3SfdxfTouZE/Projet-S1_Echos-de-Matilda?node-id=0-1&t=jzNQbGZVO3m2To3X-1" target="_blank" class="bouton-projet">
+            <span>Voir Echos de Matilda</span>
+          </a>
+
+        </section>
+      </div>
+    </main>
 
 <footer class="pied-de-page">
       <div class="pied-de-page__contenu">

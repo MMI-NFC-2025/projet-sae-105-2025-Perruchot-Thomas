@@ -1,0 +1,102 @@
+/* src/css/components/glossary.css */
+
+/* GRILLE PRINCIPALE */
+.glossaire-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colonnes responsives */
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* LA CARTE (BALISE DETAILS) */
+.carte-glossaire {
+  background-color: var(--bg-card); /* Beige (variable globale) */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.carte-glossaire:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* Style quand ouvert */
+.carte-glossaire[open] {
+  background-color: #fff; /* Devient blanc pour la lisibilité */
+  border-color: var(--bg-rose);
+}
+
+/* LE TITRE CLIQUABLE (SUMMARY) */
+.carte-glossaire__titre {
+  padding: 1.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-title);
+  cursor: pointer;
+  list-style: none; /* Cache la flèche par défaut */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Cache la flèche sur Chrome/Safari */
+.carte-glossaire__titre::-webkit-details-marker {
+  display: none;
+}
+
+/* Le petit "+" à droite */
+.carte-glossaire__titre::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--bg-rose);
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+/* Le "+" tourne en "x" quand ouvert */
+.carte-glossaire[open] .carte-glossaire__titre::after {
+  transform: rotate(45deg);
+}
+
+/* LE CONTENU CACHÉ */
+.carte-glossaire__contenu {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  color: var(--text-main);
+  animation: slideDown 0.3s ease-out;
+}
+
+.carte-glossaire__texte {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* BOUTON WIKIPEDIA */
+.btn-wiki {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--color-violet-nuit);
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-wiki:hover {
+  background-color: var(--bg-rose);
+  color: #000;
+}
+
+/* Animation d'ouverture */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
