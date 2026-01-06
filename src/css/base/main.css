@@ -1,4 +1,4 @@
-/* src/css/base/main.css */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 1.25rem; /* Un peu plus grand que le corps (1rem) */
+  font-size: 1.25rem; 
 }
 
 p {
@@ -47,42 +47,28 @@ ul, ol {
   margin: 0;
 }
 
-/* Utilitaires globaux */
 .u-noscroll {
   overflow: hidden;
 }
 
-/* src/css/base/main.css */
-
-/* ... (votre code existant) ... */
-
-/* --- STYLE DES CITATIONS (Blockquotes) --- */
-/* Pour qu'elles ressemblent aux intros des héros (Cartes violettes) */
-/* --- LE SEUL ÉLÉMENT VIOLET : LES CITATIONS --- */
 .citation {
   font-family: var(--font-serif);
   font-style: italic;
   font-size: 1.2rem;
-  line-height: 1.4; /* Interligne légèrement réduit pour gagner de la place */
+  line-height: 1.4;
   text-align: center;
-  
-  /* Le rectangle violet */
   background-color: var(--color-violet-fonce);
   color: var(--color-blanc);
-  
-  /* MODIFICATIONS ICI : */
-  padding: 1rem;       /* On réduit l'espace à l'intérieur (était 2rem) */
-  width: 100%;         /* Prend toute la largeur disponible */
-  max-width: 100%;     /* On enlève la limite de 90% */
-  
-  margin: 3rem 0;      /* Marge externe (Haut/Bas : 3rem, Gauche/Droite : 0) */
+  padding: 1rem;      
+  width: 100%;         
+  max-width: 100%;    
+  margin: 3rem 0;      
   border-radius: 4px;
   box-shadow: 0 4px 15px rgba(46, 42, 79, 0.2);
   position: relative;
-  box-sizing: border-box; /* Important pour que le padding ne dépasse pas */
+  box-sizing: border-box; 
 }
 
-/* Les guillemets décoratifs (ajustés pour le nouveau padding) */
 .citation::before {
   content: "“";
   display: block;
