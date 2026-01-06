@@ -3,14 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thelma & Louise - Nettie Stevens</title>
+    <title>Thelma & Louise - Cult Movie</title>
     <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
-    
     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
-    
     <script src="/src/js/script.js" defer></script>
   </head>
   <body>
@@ -18,19 +13,16 @@
        <a class="en-tete__lien" href="/en/index.html">
         <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
       </a>
-      
        <div class="selecteur-langue">
-        <a href="/fr/article4.html" class="selecteur-langue__lien" aria-label="Passer en Français">FR</a>
+        <a href="/fr/article4.html" class="selecteur-langue__lien" aria-label="Switch to French">FR</a>
         <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
         <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">EN</span>
       </div>
-
       <button class="en-tete__bouton-menu bouton-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
-      
       <nav class="en-tete__menu menu" id="nav-principale" hidden>
         <p class="menu__titre">My Mathilda</p>
         <ul class="menu__liste">
@@ -52,80 +44,118 @@
       </nav>
     </header>
 
-    <main class="contenu-principal">
-      
-      <header class="article-header">
-        <h1 class="hero__titre" style="color: var(--color-4); text-shadow: none; font-size: 3rem; margin-bottom: 2rem;">
-          Thelma & Louise
-        </h1>
-        <p class="article-header__intro">
-            "I don't remember ever seeing women on screen who weren't sex objects or victims..." 
-            <br>— Geena Davis
-        </p>
+    <main>
+      <header class="hero-article">
+        <div class="hero-article__conteneur">
+            <h1 class="hero-article__titre">Thelma & Louise: A Cry for Freedom</h1>
+            <p class="hero-article__intro">
+                More than just a road movie, Ridley Scott's film became a feminist anthem upon its release in 1991.
+                A story of friendship and emancipation that echoes Nettie Stevens' journey.
+            </p>
+        </div>
       </header>
 
-      <section class="article-contenu">
-        <p>
-            This cult film by Ridley Scott (1991) features two women who, faced with male violence, choose to flee forward rather than submit. 
-            It resonates particularly with the struggle of forgotten women scientists: the refusal to stay in the place assigned to them.
-        </p>
-      </section>
+      <div class="contenu-principal">
+        <article class="article-detail">
+            
+            <figure class="media-cadre-legende">
+              <img class="media-cadre-legende__img" src="/assets/img/photos/imagefilm.avif" alt="Movie Scene" />
+              <figcaption class="media-cadre-legende__texte">Cult movie poster</figcaption>
+            </figure>
 
-      <section class="trailer-container">
-        <h2 style="color: var(--color-4); margin-bottom: 1rem;">Trailer</h2>
-        <div class="video-responsive">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2iBFmKlO4BY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </section>
+            <section class="article-contenu">
+                <h2>Synopsis</h2>
+                <p>
+                   Two friends, Thelma and Louise, decide to leave their monotonous lives for a weekend getaway.
+                   But their journey takes a tragic turn when Louise shoots a man who attempts to rape Thelma.
+                   What starts as a break becomes a flight across the American West, chased by the police.
+                </p>
 
-      <section class="galerie-film">
-        <h2>Movie Gallery</h2>
-                <div class="galerie-film">
-                    
-                    <figure class="carte-film">
-                        <img class="carte-film__img" src="/assets/img/photos/galery1.avif" alt="" loading="lazy">
-                    </figure>
-        
-                    <figure class="carte-film">
-                        <img class="carte-film__img" src="/assets/img/photos/galery2.avif" alt="" loading="lazy">
-                    </figure>
-        
-                    <figure class="carte-film">
-                        <img class="carte-film__img" src="/assets/img/photos/galery3.avif" alt="" loading="lazy">
-                    </figure>
-        
-                    <figure class="carte-film">
-                        <img class="carte-film__img" src="/assets/img/photos/galery4.avif" alt="" loading="lazy">
-                    </figure>
-                    
-                     <figure class="carte-film">
-                        <img class="carte-film__img" src="/assets/img/photos/galery5.avif" alt="" loading="lazy">
-                    </figure>
-        
+                <h2>Why this choice?</h2>
+                <p>
+                    Like Nettie Stevens in the scientific world, Thelma and Louise try to exist in a world dominated by men.
+                    Their refusal to submit and their thirst for freedom make them powerful symbols of emancipation.
+                </p>
+            </section>
+
+            <section class="article-contenu" style="text-align: center;">
+                <h2>Trailer</h2>
+                <div class="conteneur-video">
+                    <video controls>
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-      </section>
+            </section>
 
-      <section class="article-contenu" style="margin-top: 2rem;">
-        <h3>Why this link?</h3>
-        <p>
-            Like Nettie Stevens whose discovery was attributed to a man, Thelma and Louise suffer from a system that does not listen to them. 
-            Their revolt is a powerful metaphor for the struggle for recognition.
-        </p>
-      </section>
+            <section class="article-contenu" style="max-width: 100%; padding: 0;">
+                <h2 style="text-align:center; margin-bottom: 2rem;">Movie Gallery</h2>
+                
+                <div class="carrousel">
+                    <button class="carrousel__bouton carrousel__bouton--gauche" aria-label="Left">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    
+                    <div class="carrousel__grille">
+                        <figure class="carte carte--affiche">
+                            <a href="https://en.wikipedia.org/wiki/Thelma_%26_Louise" target="_blank" class="carte__lien">
+                                <img class="carte__image" src="/assets/img/photos/galery1.avif" alt="Final leap scene" loading="lazy">
+                            </a>
+                        </figure>
+            
+                        <figure class="carte carte--affiche">
+                            <a href="https://www.imdb.com/title/tt0103074/" target="_blank" class="carte__lien">
+                                <img class="carte__image" src="/assets/img/photos/galery2.avif" alt="Ford Thunderbird" loading="lazy">
+                            </a>
+                        </figure>
+            
+                        <figure class="carte carte--affiche">
+                            <a href="https://www.imdb.com/title/tt0103074/mediaviewer/" target="_blank" class="carte__lien">
+                                <img class="carte__image" src="/assets/img/photos/galery3.avif" alt="Complicity scene" loading="lazy">
+                            </a>
+                        </figure>
+            
+                        <figure class="carte carte--affiche">
+                            <a href="https://www.rottentomatoes.com/m/thelma_and_louise" target="_blank" class="carte__lien">
+                                <img class="carte__image" src="/assets/img/photos/galery4.avif" alt="American West Landscape" loading="lazy">
+                            </a>
+                        </figure>
+                        
+                         <figure class="carte carte--affiche">
+                            <a href="https://www.youtube.com/watch?v=2iBFmKlO4BY" target="_blank" class="carte__lien">
+                                <img class="carte__image" src="/assets/img/photos/galery5.avif" alt="Facing destiny scene" loading="lazy">
+                            </a>
+                        </figure>
+                    </div>
 
+                    <button class="carrousel__bouton carrousel__bouton--droite" aria-label="Right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                </div>
+            </section>
+                
+            <section class="article-contenu">
+                <h2>Music</h2>
+                <p>
+                    The soundtrack, featuring Hans Zimmer and songs like "The Ballad of Lucy Jordan", perfectly accompanies this frantic race.
+                    It reinforces the feeling of urgency and the beauty of the vast open spaces.
+                </p>
+            </section>
+        </article>
+      </div>
     </main>
 
-    <footer class="pied-de-page">
+     <footer class="pied-de-page">
       <div class="pied-de-page__contenu">
         <div class="pied-de-page__bloc-logo">
           <a href="/en/index.html">
             <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
           </a>
         </div>
-        <nav aria-label="Useful links" class="pied-de-page__nav">
+        <nav aria-label="Footer menu" class="pied-de-page__nav">
           <h3>Menu</h3>
           <ul>
-            <li><a href="/en/projets.html">Other projects</a></li>
+            <li><a href="/en/projets.html">Other Projects</a></li>
             <li><a href="/en/apropos.html">About</a></li>
             <li><a href="/en/glossaire.html">Glossary</a></li>
             <li><a href="/en/contact.html">Contact</a></li>
