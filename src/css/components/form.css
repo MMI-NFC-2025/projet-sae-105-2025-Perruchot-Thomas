@@ -38,3 +38,93 @@
 .form-bouton:hover {
   opacity: 0.9;
 }
+
+/* --- STYLE DU FORMULAIRE CONTACT --- */
+
+/* Le conteneur principal du formulaire */
+.formulaire-contact {
+  background-color: var(--color-beige-clair, #FDFBF7); /* Fond beige doux */
+  padding: 3rem;
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Ombre légère pour le relief */
+  max-width: 600px;
+  margin: 0 auto; /* Centré horizontalement */
+  border: 1px solid rgba(0,0,0,0.05); /* Bordure très fine */
+}
+
+/* Espacement entre chaque champ */
+.form-groupe {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+/* Le Label (ex: "Nom", "Email") */
+.form-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: var(--text-main);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+/* Les champs de saisie (Input & Textarea) */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  
+  background-color: var(--color-blanc);
+  border: 2px solid #e0e0e0; /* Bordure grise claire par défaut */
+  border-radius: 6px;
+  
+  transition: all 0.3s ease; /* Transition fluide */
+}
+
+/* Quand on clique dans un champ (Focus) */
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--bg-rose); /* La bordure devient Rose */
+  box-shadow: 0 0 0 4px rgba(255, 192, 203, 0.2); /* Petit halo rose autour */
+}
+
+/* Zone de texte (Message) */
+.form-textarea {
+  min-height: 180px; /* Assez haut pour écrire */
+  resize: vertical;  /* L'utilisateur peut l'agrandir */
+}
+
+/* Le Bouton d'envoi */
+.btn-submit {
+  display: block;
+  width: 100%;
+  
+  background-color: var(--color-violet-nuit); /* Fond Violet Nuit */
+  color: var(--color-blanc);
+  
+  font-family: var(--font-sans);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+  padding: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 1rem;
+}
+
+/* Effet au survol du bouton */
+.btn-submit:hover {
+  background-color: var(--bg-rose); /* Devient Rose */
+  color: var(--text-main); /* Texte noir */
+  transform: translateY(-3px); /* Remonte un peu */
+}

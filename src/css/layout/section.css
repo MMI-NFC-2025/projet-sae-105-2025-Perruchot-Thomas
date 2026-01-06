@@ -160,18 +160,68 @@ section {
 
 /* Suppression des points (J'ai retiré le bloc .carte::before) */
 
-/* --- STYLE IMAGE AVEC BORDURE ROSE SIMPLE --- */
-.media-bordure-rose {
+/* --- HERO ARTICLES (Bandeau Rose) --- */
+.hero-article {
+  background-color: var(--bg-rose);
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: left; /* Alignement gauche */
+  margin-bottom: 3rem;
+}
+
+.hero-article__conteneur {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-article__titre {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  color: var(--text-title);
+  margin-bottom: 2rem;
+}
+
+.hero-article__intro {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-family: var(--font-serif);
+  line-height: 1.6;
+  color: var(--text-main);
+}
+
+
+
+/* --- IMAGE AVEC LÉGENDE INTÉGRÉE (STYLE POLAROÏD ROSE) --- */
+.media-cadre-legende {
   display: block;
-  margin: 4rem 0; /* Espace en haut et en bas */
+  /* On réduit la marge du haut pour remonter l'image comme demandé */
+  margin: 2rem 0 4rem 0; 
   
-  /* LA BORDURE ROSE */
-  border: 4px solid var(--bg-rose); 
+  /* C'est le CONTENEUR qui a la bordure maintenant */
+  border: 10px solid var(--bg-rose); 
+  border-radius: 4px;
   
-  /* Optionnel : un petit arrondi pour faire propre */
-  border-radius: 4px; 
-  
-  /* On s'assure que l'image prend bien la largeur */
+  /* Pour que l'image et le texte ne dépassent pas */
+  overflow: hidden; 
+  width: 100%;
+}
+
+.media-cadre-legende__img {
+  display: block;
   width: 100%;
   height: auto;
+  margin: 0; /* Pas d'espace entre l'image et la légende */
+}
+
+.media-cadre-legende__texte {
+  /* Style de la légende "intégrée" */
+  background-color: var(--bg-rose); /* Fond rose comme la bordure */
+  color: var(--text-main);          /* Couleur du texte */
+  
+  padding: 0.5rem 1rem 1rem 1rem;   /* Un peu d'espace */
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  margin: 0;
 }
