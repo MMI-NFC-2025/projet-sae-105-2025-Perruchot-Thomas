@@ -131,6 +131,7 @@
 /* MODIFICATION ICI : On enlève le style "Carte Violette" */
 .hero-article__intro {
   font-size: 1.2rem;
+  font-style: normal;
   font-family: var(--font-serif);
   line-height: 1.6;
   

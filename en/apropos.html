@@ -11,22 +11,22 @@
   <body>
     <header class="en-tete">
        <a class="en-tete__lien" href="/en/index.html">
-        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
+        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
       </a>
-      <div class="selecteur-langue">
-    <a href="/fr/apropos.html" class="selecteur-langue__lien" aria-label="Passer en français">FR</a>
-    <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
-    <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">EN</span>
-</div>
+      
+       <div class="selecteur-langue">
+        <a href="/fr/apropos.html" class="selecteur-langue__lien" aria-label="Passer en Français">FR</a>
+        <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
+        <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">EN</span>
+      </div>
+
       <button class="en-tete__bouton-menu bouton-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
+      
       <nav class="en-tete__menu menu" id="nav-principale" hidden>
-        <a class="menu__logo-lien" href="/en/index.html">
-            <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Logo" />
-        </a>
         <p class="menu__titre">My Mathilda</p>
         <ul class="menu__liste">
             <li class="menu__item"><a class="menu__lien" href="/en/article1.html">Nettie Stevens</a></li>
@@ -36,7 +36,7 @@
         <p class="menu__titre">Cultural Link</p>
         <ul class="menu__liste">
             <li class="menu__item"><a class="menu__lien" href="/en/article4.html">Movie: Thelma & Louise</a></li>
-            <li class="menu__item"><a class="menu__lien" href="/en/article5.html">Book: The Golden Age</a></li>
+            <li class="menu__item"><a class="menu__lien" href="/en/article5.html">Book: L’âge d’or</a></li>
         </ul>
         <ul class="menu__liste menu__liste--secondaire">
             <li class="menu__item"><a class="menu__lien" href="/en/projets.html">Other Projects</a></li>
@@ -46,25 +46,18 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <header class="hero-article">
+        <div class="hero-article__conteneur">
+            <h1 class="hero-article__titre">About this Project</h1>
+            <p class="hero-article__intro">
+               I am Thomas Perruchot, a student at the MMI department in Montbéliard.
+                This site was created for an exercise on "Mobile First" design. <br>     
+                 This site is a modest attempt to use our digital tools to participate in repairing this oblivion.
+            </p>
+        </div>
+      </header>
 
-    <main class="contenu-principal">
-        <section class="a-propos">
-            <h1 class="a-propos__titre">About this Project</h1>
-            <div class="a-propos__texte">
-                <p>
-                    I am Thomas Perruchot, a student at the MMI department in Montbéliard.
-                    This site was created for an exercise on "Mobile First" design.
-                </p>
-                <p>
-                    I chose the Matilda Effect because it is at the intersection of information design and social justice.
-                    Nettie Stevens' story is not an anecdote; it is the symptom of a patriarchal system that actively erased its women.
-                </p>
-                <p>
-                    This site is a modest attempt to use our digital tools to participate in repairing this oblivion.
-                </p>
-            </div>
-        </section>
-    </main>
 
     <footer class="pied-de-page">
       <div class="pied-de-page__contenu">

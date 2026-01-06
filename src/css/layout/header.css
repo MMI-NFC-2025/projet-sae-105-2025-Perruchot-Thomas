@@ -1,41 +1,35 @@
 /* =========================================
    1. EN-TÊTE (HEADER) - FIXE ET VIOLET
    ========================================= */
-
 .en-tete {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
   width: 100%;
-  
   position: relative; 
   z-index: 2000; 
-  
   background-color: var(--color-violet-nuit);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
 }
 
-/* Logo */
 .en-tete__logo {
   height: 40px; 
   width: auto;
   display: block;
 }
 
-/* Langue (FR | EN) */
 .selecteur-langue, 
 .selecteur-langue__lien {
   color: var(--color-blanc) !important;
   text-decoration: none;
   font-family: var(--font-sans);
-  font-size: 1rem; /* Taille standard */
+  font-size: 1rem;
 }
 
 /* =========================================
-   2. BOUTON BURGER (BLANC)
+   2. BOUTON BURGER
    ========================================= */
-
 .bouton-menu {
   background: none;
   border: none;
@@ -64,32 +58,25 @@
 
 
 /* =========================================
-   3. MENU DÉROULANT (STYLE FOOTER)
+   3. MENU DÉROULANT
    ========================================= */
-
 .menu {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  
   background-color: var(--color-violet-nuit);
   z-index: 1000;
-  
-  /* ALIGNEMENT GAUCHE */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
   
-  padding-top: 6rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+  /* Marges internes globales */
+  padding: 6rem 2rem 2rem 2rem;
   
   overflow-y: auto;
-  
   transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
   opacity: 1;
   transform: translateY(0);
@@ -105,10 +92,8 @@
 }
 
 /* --- ÉLÉMENTS DU MENU --- */
-
 .menu__logo-lien { display: none; }
 
-/* SUPPRESSION DU PADDING GAUCHE (Alignement strict) */
 .menu__liste {
   list-style: none;
   padding-left: 0 !important;
@@ -117,40 +102,37 @@
 }
 
 .menu__item {
-  margin-bottom: 0.8rem; /* Espacement un peu plus serré comme un footer */
+  margin-bottom: 0.8rem;
   width: 100%;
   text-align: left;
 }
 
-/* --- TITRES (EX: MA MATHILDA) --- */
+/* --- TITRES (Ma Mathilda...) --- */
 .menu__titre {
-  /* TYPO DU FOOTER (Souvent sans-serif et gras) */
-  font-family: var(--font-sans); 
-  font-weight: 700; /* Gras */
-  font-size: 1.1rem; /* Taille titre de section footer */
-  text-transform: uppercase; /* Souvent en majuscule dans les footers */
-  letter-spacing: 0.05em;
+  /* Police Sans Serif */
+  font-family: var(--font-sans);
   
+  /* CRUCIAL : Pas de majuscules */
+  text-transform: none !important; 
+  
+  font-weight: normal; 
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  
-  /* COULEUR GRIS CLAIR (Comme demandé) */
   color: rgba(255, 255, 255, 0.6) !important; 
   text-align: left;
 }
 
-/* --- LIENS (EX: NETTIE STEVENS) --- */
+/* --- LIENS (Nettie Stevens...) --- */
 .menu__lien {
   text-decoration: none;
-  
-  /* TYPO DU FOOTER (Texte normal) */
-  font-family: var(--font-sans); /* Police sans serif (bâton) */
-  font-size: 1rem; /* Taille standard (16px), beaucoup plus petit qu'avant */
+  font-family: var(--font-sans);
+  text-transform: none; /* Sécurité */
+  font-size: 1.2rem;
   line-height: 1.5;
-  
-  /* COULEUR BLANCHE */
   color: var(--color-blanc) !important;
-  
+  font-weight: bold; 
   display: block;
   width: 100%;
   text-align: left;
@@ -159,12 +141,24 @@
 
 .menu__lien:hover {
   opacity: 0.7;
-  color: var(--bg-rose) !important; /* Petit bonus rose au survol */
+  color: var(--bg-rose) !important;
 }
 
-/* --- LIGNE DE SÉPARATION --- */
+/* --- LA FAMEUSE LIGNE DE SÉPARATION --- */
 .menu__liste--secondaire {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  /* 1. La ligne bien blanche */
+  border-top: 1px solid var(--color-blanc);
+  
+  /* 2. LE SECRET DE LA LARGEUR : 
+     On force la largeur à être 100% du parent + les 4rem de padding (2 à gauche, 2 à droite) */
+  width: calc(100% + 4rem);
+
   margin-top: 2rem;
   padding-top: 2rem;
+  
+  /* 3. On décale vers la gauche pour coller au bord */
+  margin-left: -2rem;
+  
+  padding-left: 2rem !important; 
+  padding-right: 2rem !important;
 }
