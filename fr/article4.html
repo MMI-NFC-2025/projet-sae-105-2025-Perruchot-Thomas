@@ -5,121 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thelma & Louise - Nettie Stevens</title>
     <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    
     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+    
     <script src="/src/js/script.js" defer></script>
   </head>
   <body>
     <header class="en-tete">
       <a class="en-tete__lien" href="/fr/index.html">
-        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
+        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda - Retour à l'accueil" />
       </a>
+      
       <div class="selecteur-langue">
-    <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">FR</span>
-    <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
-    <a href="/en/article4.html" class="selecteur-langue__lien" aria-label="Switch to English">EN</a>
-</div>
-      <button class="en-tete__bouton-menu bouton-menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-principale">
+        <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">FR</span>
+        <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
+        <a href="/en/article4.html" class="selecteur-langue__lien" aria-label="Switch to English">EN</a>
+      </div>
+
+      <button class="en-tete__bouton-menu bouton-menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
+
       <nav class="en-tete__menu menu" id="nav-principale" hidden>
         <a class="menu__logo-lien" href="/fr/index.html">
-            <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Logo" />
+            <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
         </a>
         <p class="menu__titre">Ma Mathilda</p>
         <ul class="menu__liste">
-            <li class="menu__item"><a class="menu__lien" href="/fr/article1.html">Nettie Stevens</a></li>
-            <li class="menu__item"><a class="menu__lien" href="/fr/article2.html">Les femmes de science</a></li>
-            <li class="menu__item"><a class="menu__lien" href="/fr/article3.html">Sa thèse</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/article1.html">Nettie Stevens</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/article2.html">Les femmes de science</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/article3.html">Sa thèse</a></li>
         </ul>
         <p class="menu__titre">Lien culturel</p>
         <ul class="menu__liste">
-            <li class="menu__item"><a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a></li>
-            <li class="menu__item"><a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/article4.html">Film : Thelma & Louise</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/article5.html">Livre : L’âge d’or</a></li>
         </ul>
         <ul class="menu__liste menu__liste--secondaire">
-            <li class="menu__item"><a class="menu__lien" href="/fr/projets.html">Autres projets</a></li>
-            <li class="menu__item"><a class="menu__lien" href="/fr/apropos.html">À propos</a></li>
-            <li class="menu__item"><a class="menu__lien" href="/fr/glossaire.html">Glossaire</a></li>
-            <li class="menu__item"><a class="menu__lien" href="/fr/contact.html">Contact</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/projets.html">Autres projets</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/apropos.html">À propos</a></li>
+           <li class="menu__item"><a class="menu__lien" href="/fr/glossaire.html">Glossaire</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/fr/contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="contenu-principal">
-      <article class="article-detail">
-        <header class="article-header">
-          <h1 class="article-header__titre">Thelma & Louise : la révolte qui fait réagir.</h1>
-          <p class="article-header__intro">
-            Thelma & Louise (1991) ne réhabilite pas une figure oubliée, il réhabilite la colère féminine. 
-            En montrant crûment la violence du patriarcat, il cesse d'être un simple film pour devenir un 
-            électrochoc politique qui force le public à réagir.
-          </p>
-        </header>
+      
+      <header class="article-header">
+        <h1 class="hero__titre" style="color: var(--color-4); text-shadow: none; font-size: 3rem; margin-bottom: 2rem;">
+          Thelma & Louise
+        </h1>
+        <p class="article-header__intro">
+            "Je ne me souviens pas avoir jamais vu des femmes à l'écran qui n'étaient ni des objets sexuels ni des victimes..." 
+            <br>— Geena Davis
+        </p>
+      </header>
 
-        <figure class="article-media">
-          <img class="article-media__img" src="/assets/img/photos/film.avif" alt="Scène du film Thelma et Louise" />
-          <figcaption class="article-media__legende">
-            Susan Sarandon et Geena Davis dans le rôle de Thelma et Louise.
-          </figcaption>
-        </figure>
+      <section class="article-contenu">
+        <p>
+            Ce film culte de Ridley Scott (1991) met en scène deux femmes qui, face à la violence masculine, choisissent la fuite en avant plutôt que la soumission. 
+            Il résonne particulièrement avec le combat des femmes scientifiques oubliées : le refus de rester à la place qu'on leur a assignée.
+        </p>
+      </section>
 
-        <section class="article-contenu">
-          <h2>L'émancipation comme acte criminel</h2>
-          <p>
-            Le film met en scène deux femmes ordinaires piégées dans un quotidien patriarcal : Thelma, 
-            par un mari infantilisant, et Louise, par un travail et un passé traumatiques.
-          </p>
-          <p>
-            Leur simple "road trip", une quête d'espace et de liberté, bascule lors d'une tentative de viol. 
-            Leur acte d'autodéfense est immédiatement requalifié en crime par le système. C'est là le cœur du propos : 
-            dans un système patriarcal, l'émancipation féminine est perçue comme une transgression, un acte 
-            criminel qui doit être puni.
-          </p>
+      <section class="trailer-container">
+        <h2 style="color: var(--color-4); margin-bottom: 1rem;">Bande Annonce</h2>
+        <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2iBFmKlO4BY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
 
-          <h2>Le Système comme Antagoniste</h2>
-          <p>
-            Il n'y a pas un seul "méchant". L'antagoniste, c'est le système dans son ensemble : le mari, 
-            l'agresseur, le camionneur obscène, le policier, et au final, l'armée de voitures de police.
-          </p>
-          <p>
-            Le parallèle avec Nettie Stevens est puissant. Son "antagoniste" n'était pas seulement 
-            Thomas Hunt Morgan. C'était l'ensemble du système scientifique qui était structuré pour la dévaloriser. 
-            Thelma & Louise donne un visage à ce système abstrait.
-          </p>
-
-          <blockquote class="citation">
-            "Le film ne nous donne pas une fin heureuse. Il nous donne une raison de nous battre pour une."
-          </blockquote>
-
-          <h2>Forcer la réaction : un acte de réhabilitation</h2>
-          <p>
-            C'est ici que le film devient un outil de réhabilitation. En acculant les héroïnes au bord 
-            du Grand Canyon, il ne leur laisse que deux choix : la soumission (la prison) ou la mort.
-          </p>
-          <p>
-            Ce choix impossible est un miroir tendu au spectateur. Le film nous force à ressentir l'injustice fondamentale du système. 
-            Il réhabilite notre droit à être en colère face à l'oppression.
-          </p>
-          
-          <h2>Bande annonce du film :</h2>
-          <div class="trailer-container">
-            <div class="video-responsive">
-             <iframe 
-               width="560" 
-               height="315" 
-               src="https://www.youtube.com/embed/wQYNAH-Z37A" 
-               title="Thelma & Louise (1991) - Bande Annonce" 
-               frameborder="0" 
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-               referrerpolicy="strict-origin-when-cross-origin" 
-               allowfullscreen>
-             </iframe>
+      <section class="galerie-film">
+        <h2 class="badge" style="margin-top: 2rem;">Galerie du film</h2>
+        
+        <div class="carrousel">
+            <div class="carrousel__grille">
+                <img src="/assets/img/photos/galery1.avif" alt="Scène du film 1" style="width: 180px; height: 270px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                <img src="/assets/img/photos/galery2.avif" alt="Scène du film 2" style="width: 180px; height: 270px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                <img src="/assets/img/photos/galery3.avif" alt="Scène du film 3" style="width: 180px; height: 270px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                <img src="/assets/img/photos/galery4.avif" alt="Scène du film 4" style="width: 180px; height: 270px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                <img src="/assets/img/photos/galery5.avif" alt="Scène du film 5" style="width: 180px; height: 270px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                <img src="/assets/img/photos/film.avif"    alt="Affiche du film" style="width: 180px; height: 270px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
             </div>
-          </div>
-        </section>
-      </article>
+        </div>
+      </section>
+
+      <section class="article-contenu" style="margin-top: 2rem;">
+        <h3>Pourquoi ce lien ?</h3>
+        <p>
+            Comme Nettie Stevens dont la découverte a été attribuée à un homme, Thelma et Louise subissent un système qui ne les écoute pas. 
+            Leur révolte est une métaphore puissante de la lutte pour la reconnaissance.
+        </p>
+      </section>
+
     </main>
 
     <footer class="pied-de-page">

@@ -1,0 +1,22 @@
+/* --- CONTENEURS ET SECTIONS --- */
+
+/* Utilisé pour centrer le texte des articles */
+.contenu-principal {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Utilisé sur l'accueil pour les sections qui doivent être centrées */
+.conteneur-centre {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Espacement par défaut des sections */
+section {
+  margin-bottom: 4rem;
+}

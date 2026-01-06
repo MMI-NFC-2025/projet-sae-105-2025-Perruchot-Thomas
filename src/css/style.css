@@ -1,25 +1,21 @@
 @import "vendors/normalize.css";
 
 
-@import 'base/variables.css';
-@import 'base/reset.css';
-@import 'base/typography.css';
+
+@import url('utils/variables.css');
 
 
-
-@import 'layout/header.css';
-@import 'layout/footer.css';
-@import 'layout/main.css';
+@import url('base/main.css');
 
 
-@import 'components/buttons.css';
-@import 'components/cards.css';
-@import 'components/hero.css';
-@import 'components/lang.css';
-@import 'components/media.css';    
-@import 'components/forms.css';     
-@import 'components/carousel.css';
-@import 'components/lists.css';   
+@import url('layout/header.css');
+@import url('layout/footer.css');
+@import url('layout/section.css');
 
 
-@import 'utils/error-page.css';
+@import url('composants/badge.css');
+@import url('composants/button.css');
+@import url('composants/menu.css');
+@import url('composants/hero.css');
+@import url('composants/card.css');
+@import url('composants/form.css');

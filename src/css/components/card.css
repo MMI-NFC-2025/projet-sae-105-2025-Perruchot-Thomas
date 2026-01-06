@@ -1,0 +1,80 @@
+/* --- CARTE UNITAIRE --- */
+.carte {
+  background-color: var(--color-3); 
+  border-radius: 30px; 
+  padding: 25px;
+  min-height: 580px; 
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  border: none;
+}
+
+.carte:hover {
+  transform: translateY(-8px);
+}
+
+.carte__titre {
+  font-family: var(--font-serif);
+  font-size: 1rem; 
+  color: var(--color-6); 
+  font-weight: bold; 
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.carte__lien {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.carte__image {
+  width: 180px;  
+  height: 270px; 
+  object-fit: cover; 
+  display: block;
+  border-radius: 12px;
+  margin: 0 auto 1.5rem auto; 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+}
+
+.carte__contenu {
+  width: 100%;
+  text-align: left;
+}
+
+/* --- CARROUSEL (Conteneur des cartes) --- */
+.carrousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--color-9); /* Rose */
+  margin: 3rem 0; 
+  padding: 3rem 0; 
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.carrousel__grille {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  padding: 0 max(2rem, calc(50vw - 600px));
+  scrollbar-width: none;
+}
+.carrousel__grille::-webkit-scrollbar { display: none; }
+
+.carrousel__grille .carte {
+  min-width: 300px;
+  max-width: 300px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.carrousel__bouton { display: none; }

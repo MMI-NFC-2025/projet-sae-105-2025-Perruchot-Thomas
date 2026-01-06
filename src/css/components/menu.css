@@ -1,0 +1,60 @@
+/* --- MENU BURGER --- */
+.bouton-menu {
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.bouton-menu__barre {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-5);
+  border-radius: 2px;
+}
+
+/* --- MENU DÉROULANT --- */
+.en-tete__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--header-bg);
+  padding: 1.5rem;
+  text-align: center;
+  display: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.en-tete__menu:not([hidden]) {
+  display: block;
+}
+
+.menu__titre {
+  font-family: var(--font-serif);
+  color: var(--color); /* Mauve clair */
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu__lien {
+  color: var(--color-5);
+  font-size: 1rem;
+  display: block;
+  padding: 0.4rem 0;
+}
+
+.menu__lien:hover {
+  color: var(--color);
+  text-decoration: underline;
+}

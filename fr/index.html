@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nettie Stevens - Accueil</title>
     <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    
     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
     <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+    
     <script src="/src/js/script.js" defer></script>
   </head>
   <body>
@@ -16,16 +18,19 @@
       <a class="en-tete__lien" href="/fr/index.html">
         <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Logo Mathilda - Retour à l'accueil" />
       </a>
+      
       <div class="selecteur-langue">
-    <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">FR</span>
-    <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
-    <a href="/en/index.html" class="selecteur-langue__lien" aria-label="Switch to English">EN</a>
-</div>
+        <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">FR</span>
+        <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
+        <a href="/en/index.html" class="selecteur-langue__lien" aria-label="Switch to English">EN</a>
+      </div>
+
       <button class="en-tete__bouton-menu bouton-menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-principale">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
+
       <nav class="en-tete__menu menu" id="nav-principale" hidden>
         <a class="menu__logo-lien" href="/fr/index.html">
             <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Logo Mathilda" />
@@ -50,18 +55,18 @@
       </nav>
     </header>
 
-    <main class="contenu-principal">
+    <main>
       <section class="hero">
-    <div class="hero__contenu">
-        <h1 class="hero__titre">
-            Nettie<br>
-            Hors-champ
-        </h1>
-    </div>
-    <figure class="hero__figure">
-        <img class="hero__image" src="/assets/img/photos/hero.avif" alt="Portrait de Nettie Stevens">
-    </figure>
-</section>
+        <div class="hero__contenu">
+            <h1 class="hero__titre">
+                Nettie<br>
+                Hors-champ
+            </h1>
+        </div>
+        <figure class="hero__figure">
+            <img class="hero__image" src="/assets/img/photos/hero.avif" alt="Portrait de Nettie Stevens">
+        </figure>
+      </section>
 
       <section class="intro">
         <h2 class="intro__titre">L'oubli n'est pas un accident.</h2>
@@ -69,15 +74,16 @@
           L'Effet Matilda est un mécanisme systémique : il désigne l'appropriation ou la minimisation des découvertes de femmes scientifiques. 
           Ce site explore ce biais patriarcal à travers l'histoire de Nettie Stevens, et comment la culture répare aujourd'hui cet effacement.
         </p>
+        
         <figure class="intro__figure">
             <img class="intro__image" src="/assets/img/photos/mathilda.avif" alt="Dessin humoristique illustrant l'effet Matilda">
+            <div class="intro__decoration">
+                <img class="intro__decoration-img" src="/assets/img/vectoriels/noeud.svg" alt="" aria-hidden="true" />
+            </div>
         </figure>
-        <div class="intro__decoration">
-            <img class="intro__decoration-img" src="/assets/img/vectoriels/noeud.svg" alt="" aria-hidden="true" />
-        </div>
       </section>
 
-      <section class="section-articles">
+      <section class="section-articles conteneur-centre">
        <header class="section-articles__en-tete">
          <h2 class="badge">Ma Mathilda</h2>
        </header>
@@ -126,7 +132,7 @@
             <article class="carte">
               <h3 class="carte__titre">Le système qui l'a effacée.</h3>
               <a href="/fr/article5.html" class="carte__lien">
-                <img class="carte__image" alt="Livre L'âge d'or" src="/assets/img/photos/livre-age-dor.avif" />
+                <img class="carte__image" alt="Livre L'âge d'or" src="/assets/img/photos/livre age d'or.avif" />
                 <div class="carte__contenu">
                    <p class="carte__description">"L'âge d'or de l'ordre masculin" : ce livre décrit l'époque où Nettie Stevens a vécu.</p>
                 </div>

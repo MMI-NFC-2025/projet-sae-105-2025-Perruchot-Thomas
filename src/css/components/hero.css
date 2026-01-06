@@ -1,95 +1,97 @@
-/* --- HERO SECTION (Plein Écran) --- */
+/* --- HERO ACCUEIL --- */
 .hero {
   position: relative;
   width: 100%;
-  /* La hauteur prend tout l'écran moins la hauteur du header (80px) */
-  height: calc(100vh - 80px);
+  height: calc(90vh - 60px); 
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-/* L'image prend toute la place du bloc */
-.hero__figure {
+.hero__figure, .hero__image {
   width: 100%;
   height: 100%;
-  margin: 0;
   display: block;
+  object-fit: cover;
 }
-
 .hero__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Coupe l'image proprement pour remplir l'écran */
-  display: block;
-  /* Assombrit légèrement pour garantir que le texte blanc soit lisible */
   filter: brightness(0.85);
 }
 
-/* --- TEXTE SUPERPOSÉ (Aligné gauche) --- */
 .hero__contenu {
   position: absolute;
-  top: 50%;           /* Centrage vertical */
-  left: 5%;           /* Marge gauche (5% de la largeur) */
-  transform: translateY(-50%); /* Ajustement fin pour le centrage */
-  z-index: 10;        /* Au-dessus de l'image */
-  width: 90%;         /* Largeur max */
-  text-align: left;   /* Alignement gauche */
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 90%;
+  text-align: left;
 }
 
 .hero__titre {
   font-family: var(--font-serif);
-  /* Taille responsive : Grossit avec l'écran (Min 3rem, Max 6rem) */
-  font-size: clamp(3rem, 8vw, 6rem); 
-  color: var(--color-5); /* BLANC */
+  font-size: clamp(1.8rem, 4vw, 3.5rem); 
+  color: var(--color-5);
   line-height: 1.1;
   text-transform: uppercase;
-  margin: 0;
-  
-  /* Ombre portée pour détacher le texte du fond */
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
 }
 
-/* --- SECTION SUIVANTE (Intro) --- */
+/* --- SECTION INTRO (Accueil) --- */
 .intro {
   padding: 4rem 2rem;
-  text-align: center;
-  background-color: var(--color-3); /* Fond beige */
+  text-align: left;
+  background-color: var(--color-3);
 }
 
 .intro__titre {
-  font-family: var(--font-serif);
   font-size: 2rem;
-  color: var(--color-2); /* Violet nuit */
+  color: var(--color-2);
   margin-bottom: 1rem;
-  font-weight: bold;
 }
 
-.intro__texte {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  color: var(--color-6); /* Noir */
-}
-
-/* Décorations (image cartoon, noeud...) */
 .intro__figure {
   margin: 3rem 0;
-}
-
-.intro__image {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+  position: relative;
+  width: fit-content;
+  display: block;
 }
 
 .intro__decoration {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg);
+  z-index: 10;
+  pointer-events: none;
+}
+.intro__decoration-img {
+  width: 200px;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
 }
 
-.intro__decoration-img {
-  width: 60px;
-  height: auto;
+/* --- HERO ARTICLE (Pages détails) --- */
+.hero-article {
+  background-color: var(--color-9); /* Rose */
+  width: 100%;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-article__conteneur {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-article__titre {
+  font-size: 2.5rem;
+  color: var(--color-4);
+  margin-bottom: 1.5rem;
+}
+
+.hero-article__intro {
+  font-size: 1.2rem;
+  color: var(--color-2);
+  font-style: italic;
 }

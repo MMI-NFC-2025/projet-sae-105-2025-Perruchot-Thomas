@@ -5,27 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nettie Stevens - Home</title>
     <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
+    
     <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
     <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
+    
     <script src="/src/js/script.js" defer></script>
   </head>
   <body>
     <header class="en-tete">
       <a class="en-tete__lien" href="/en/index.html">
-        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo - Home" />
+        <img class="en-tete__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo - Back to home" />
       </a>
+      
       <div class="selecteur-langue">
-    <a href="/fr/index.html" class="selecteur-langue__lien" aria-label="Passer en français">FR</a>
-    <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
-    <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">EN</span>
-</div>
-      <button class="en-tete__bouton-menu bouton-menu" aria-label="Open menu" aria-expanded="false" aria-controls="nav-principale">
+        <a href="/fr/index.html" class="selecteur-langue__lien" aria-label="Switch to French">FR</a>
+        <span class="selecteur-langue__separateur" aria-hidden="true">|</span>
+        <span class="selecteur-langue__lien selecteur-langue__lien--actif" aria-current="page">EN</span>
+      </div>
+
+      <button class="en-tete__bouton-menu bouton-menu" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
         <span class="bouton-menu__barre" aria-hidden="true"></span>
       </button>
-      <nav class="en-tete__menu menu" id="nav-principale" hidden>
+
+      <nav class="en-tete__menu menu" id="main-nav" hidden>
         <a class="menu__logo-lien" href="/en/index.html">
             <img class="menu__logo-img" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
         </a>
@@ -38,7 +44,7 @@
         <p class="menu__titre">Cultural Link</p>
         <ul class="menu__liste">
           <li class="menu__item"><a class="menu__lien" href="/en/article4.html">Movie: Thelma & Louise</a></li>
-          <li class="menu__item"><a class="menu__lien" href="/en/article5.html">Book: The Golden Age</a></li>
+          <li class="menu__item"><a class="menu__lien" href="/en/article5.html">Book: The Age of Gold</a></li>
         </ul>
         <ul class="menu__liste menu__liste--secondaire">
           <li class="menu__item"><a class="menu__lien" href="/en/projets.html">Other Projects</a></li>
@@ -49,34 +55,35 @@
       </nav>
     </header>
 
-    <main class="contenu-principal">
-     <section class="hero">
-    <div class="hero__contenu">
-        <h1 class="hero__titre">
-            Nettie<br>
-            Out of Focus
-        </h1>
-    </div>
-    <figure class="hero__figure">
-        <img class="hero__image" src="/assets/img/photos/hero.avif" alt="Portrait of Nettie Stevens">
-    </figure>
-</section>
+    <main>
+      <section class="hero">
+        <div class="hero__contenu">
+            <h1 class="hero__titre">
+                Nettie<br>
+                Out of Focus
+            </h1>
+        </div>
+        <figure class="hero__figure">
+            <img class="hero__image" src="/assets/img/photos/hero.avif" alt="Portrait of Nettie Stevens">
+        </figure>
+      </section>
 
       <section class="intro">
         <h2 class="intro__titre">Oblivion is not an accident.</h2>
         <p class="intro__texte">
-          The Matilda Effect is a systemic mechanism: it designates the appropriation or minimization of discoveries by female scientists.
+          The Matilda Effect is a systemic mechanism: it refers to the denial or minimization of women scientists' discoveries.
           This site explores this patriarchal bias through the story of Nettie Stevens, and how culture is repairing this erasure today.
         </p>
+        
         <figure class="intro__figure">
-            <img class="intro__image" src="/assets/img/photos/mathilda.avif" alt="Matilda effect illustration">
+            <img class="intro__image" src="/assets/img/photos/mathilda.avif" alt="Cartoon illustrating the Matilda Effect">
+            <div class="intro__decoration">
+                <img class="intro__decoration-img" src="/assets/img/vectoriels/noeud.svg" alt="" aria-hidden="true" />
+            </div>
         </figure>
-        <div class="intro__decoration">
-            <img class="intro__decoration-img" src="/assets/img/vectoriels/noeud.svg" alt="" aria-hidden="true" />
-        </div>
       </section>
 
-      <section class="section-articles">
+      <section class="section-articles conteneur-centre">
        <header class="section-articles__en-tete">
          <h2 class="badge">My Mathilda</h2>
        </header>
@@ -91,16 +98,16 @@
               <a href="/en/article1.html" class="carte__lien">
                 <img class="carte__image" alt="Nettie Stevens" src="/assets/img/photos/stevens.avif" />
                 <div class="carte__contenu">
-                   <p class="carte__description">She discovered the Y chromosome. He got the Nobel. Dive into the story of Nettie Stevens.</p>
+                   <p class="carte__description">She discovered the Y chromosome. He got the Nobel. Dive into Nettie Stevens' story.</p>
                 </div>
               </a>
             </article>
             <article class="carte">
               <h3 class="carte__titre">Women of Science in Literature</h3>
               <a href="/en/article2.html" class="carte__lien">
-                <img class="carte__image" alt="Books" src="/assets/img/photos/livre.avif" />
+                <img class="carte__image" alt="Old books" src="/assets/img/photos/livre.avif" />
                 <div class="carte__contenu">
-                   <p class="carte__description">When fiction repairs oblivion. How novels give life back to women scientists.</p>
+                   <p class="carte__description">When fiction repairs oblivion. How novels bring women scientists back to life.</p>
                 </div>
               </a>
             </article>
@@ -109,16 +116,16 @@
               <a href="/en/article3.html" class="carte__lien">
                 <img class="carte__image" alt="Chromosomes" src="/assets/img/photos/chromosome.avif" />
                 <div class="carte__contenu">
-                   <p class="carte__description">No need for a lab coat to understand. Dive into Nettie Stevens' discovery.</p>
+                   <p class="carte__description">No lab coat needed to understand. Dive into Nettie Stevens' discovery.</p>
                 </div>
               </a>
             </article>
             <article class="carte">
-              <h3 class="carte__titre">Thelma & Louise: the revolt that triggers reaction.</h3>
+              <h3 class="carte__titre">Thelma & Louise: the revolt that strikes back.</h3>
               <a href="/en/article4.html" class="carte__lien">
                 <img class="carte__image" alt="Thelma and Louise" src="/assets/img/photos/film.avif" />
                 <div class="carte__contenu">
-                   <p class="carte__description">This film doesn't fix the past, it arms the present. The impossible escape of two women.</p>
+                   <p class="carte__description">This movie doesn't fix the past, it arms the present. The impossible escape of two women.</p>
                 </div>
               </a>
             </article>
@@ -127,7 +134,7 @@
               <a href="/en/article5.html" class="carte__lien">
                 <img class="carte__image" alt="Book The Golden Age" src="/assets/img/photos/livre-age-dor.avif" />
                 <div class="carte__contenu">
-                   <p class="carte__description">"The Golden Age of the Masculine Order": this book describes the era when Nettie Stevens lived.</p>
+                   <p class="carte__description">"The Golden Age of Patriarchal Order": this book describes the era Nettie Stevens lived in.</p>
                 </div>
               </a>
             </article>
@@ -146,10 +153,10 @@
             <img class="pied-de-page__logo" src="/assets/img/icones/logo.svg" alt="Mathilda Logo" />
           </a>
         </div>
-        <nav aria-label="Footer menu" class="pied-de-page__nav">
+        <nav aria-label="Useful links" class="pied-de-page__nav">
           <h3>Menu</h3>
           <ul>
-            <li><a href="/en/projets.html">Other Projects</a></li>
+            <li><a href="/en/projets.html">Other projects</a></li>
             <li><a href="/en/apropos.html">About</a></li>
             <li><a href="/en/glossaire.html">Glossary</a></li>
             <li><a href="/en/contact.html">Contact</a></li>

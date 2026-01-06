@@ -1,0 +1,23 @@
+:root {
+  /* --- PALETTE DE COULEURS --- */
+  --color: #cbbaf2;       /* Mauve clair */
+  --color-2: #2e2a4f;     /* Violet Nuit (Header/Footer) */
+  --color-3: #f7f3ee;     /* Beige clair (Fond Body/Cartes) */
+  --color-4: #5a3e9b;     /* Violet Foncé (Titres, Boutons) */
+  --color-5: #ffffff;     /* Blanc (Texte sur fond foncé) */
+  --color-6: #000000;     /* Noir (Texte standard) */
+  --color-9: #e2c2d2;     /* Rose pâle (Hero Article 1, Carrousel) */
+
+  /* --- ALIAS SÉMANTIQUES --- */
+  --bg-body: var(--color-3);
+  --text-main: var(--color-6);
+  --header-bg: var(--color-2);
+  --header-text: var(--color-5);
+  
+  /* --- TYPOGRAPHIE --- */
+  --font-serif: 'Georgia', 'Times New Roman', serif; 
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+
+  /* --- TAILLES DE RÉFÉRENCE --- */
+  --body-size: 16px;
+}

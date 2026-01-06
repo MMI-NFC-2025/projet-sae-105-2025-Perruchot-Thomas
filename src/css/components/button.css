@@ -1,0 +1,35 @@
+/* --- BOUTONS --- */
+
+/* Boutons Langue (Header) */
+.selecteur-langue__lien {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;  
+  height: 32px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--color-5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.selecteur-langue__lien:hover {
+  background-color: var(--color-5);
+  color: var(--color-4);
+  transform: scale(1.05);
+}
+
+.selecteur-langue__lien--actif {
+  background-color: var(--color-5);
+  color: var(--color-4);
+  cursor: default;
+  pointer-events: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.selecteur-langue__separateur {
+  display: none;
+}
