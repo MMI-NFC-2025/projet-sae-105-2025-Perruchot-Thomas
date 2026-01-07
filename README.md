@@ -6,5 +6,5 @@
 - NOM : Perruchot
 - PRÉNOM : Thomas
 - GROUPE : B1
-- URL du site : 
+- URL du site : https://nettiehorschamp.netlify.app/fr/
 - URL FIGMA : https://www.figma.com/design/MfiLUETR2d7IYV5vCwNR4K/Mon-projet-solo-maquette?node-id=3701-115&t=XR52aPzyxMQUrDXX-1
