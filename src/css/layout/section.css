@@ -112,7 +112,7 @@ section {
 .autres-femmes .carte {
   background-color: var(--bg-card);
   color: var(--text-main);
-  border-radius: 8px;
+  border-radius: 50px;
   padding: 1.5rem;
   width: 100%;
   margin-bottom: 3rem;
